@@ -32,7 +32,7 @@
                                                ng-file-select="onFileSelect($files)" required>
 
                                     </div>
-                                    <input id="hidden_img" type="text" ng-show="false" name="picmark" ng-model="picmark" required>
+                                    <input id="hidden_img" type="text" ng-show="false" ng-disabled="inputEdit" name="picmark" ng-model="picmark" required>
                                     <span ng-show="myForm.picmark.$error.required" style="color:red">图片是必须的</span>
                                 </div>
                             </div>
@@ -44,9 +44,9 @@
                                 <label for="inputName" class="col-sm-3 control-label">价格</label>
                                 <div class="col-sm-9">
                                     <div style="display: inline-flex;">
-                                        <label><input name="paymode" ng-value=false ng-model="item.paymode" type="radio"/>免费 </label>
+                                        <label><input name="paymode" ng-disabled="inputEdit" ng-value=false ng-model="item.paymode" type="radio"/>免费 </label>
                                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                        <label><input name="paymode" ng-value=true ng-model="item.paymode"  type="radio" />付费 </label>
+                                        <label><input name="paymode" ng-disabled="inputEdit" ng-value=true ng-model="item.paymode"  type="radio" />付费 </label>
 
                                     </div>
 
@@ -141,7 +141,7 @@
                                 <label for="inputName" class="col-sm-3 control-label">是否通过</label>
                                 <div class="col-sm-9">
                                     <select name="applySelect" selectpicker="selectpicker" ng-options="s.value as s.text for s in useables"
-                                            class="editable-input ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="welcome.status"
+                                            class="editable-input ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="item.status"
                                             tabindex="-98" style="" ng-change="setApplyStatus()" >
 
                                     </select>
@@ -158,7 +158,7 @@
                             <div class="form-group row clearfix">
                                 <label for="inputName" class="col-sm-3 control-label">审批人</label>
                                 <div class="col-sm-9">
-                                    <input type="text" name="applypeople"  class="form-control" ng-model="welcome.applypeople"
+                                    <input type="text" name="applypeople"  class="form-control" ng-model="item.applypeople"
                                            required readonly>
                                     <!--<span ng-show="myForm.contactName.$error.required" style="color:red" >联系人是必须的</span>-->
                                 </div>
@@ -170,7 +170,7 @@
                             <div class="form-group row clearfix">
                                 <label for="inputName" class="col-sm-3 control-label">未通过原因</label>
                                 <div class="col-sm-9">
-                                <textarea name="applydetail"  class="form-control" ng-model="welcome.applydetail"
+                                <textarea name="applydetail"  class="form-control" ng-model="item.applydetail"
                                           placeholder="请输入未通过原因..." required></textarea>
                                     <span ng-show="myForm.applydetail.$error.required" style="color:red" >未通过原因是必须的</span>
                                 </div>

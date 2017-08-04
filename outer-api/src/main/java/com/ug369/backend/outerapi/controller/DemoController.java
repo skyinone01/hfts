@@ -1,9 +1,11 @@
 package com.ug369.backend.outerapi.controller;
 
 import com.ug369.backend.bean.bean.request.UserRequest;
+import com.ug369.backend.outerapi.annotation.MemoryCache;
 import com.ug369.backend.service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -16,6 +18,9 @@ public class DemoController {
 	@Autowired
 	private UserService userService;
 
+	@Autowired
+	private MemoryCache memoryCache;
+
 	@RequestMapping("/init/adduser")
 	public String ok() {
 		UserRequest request = new UserRequest();
@@ -27,5 +32,18 @@ public class DemoController {
 		request.setDepartment("平台运营部");
 		userService.createOrUpdate(request);
 		return "ok";
+	}
+
+	@RequestMapping("/jsp/controller.jsp")
+	public String jsp() {
+
+		return "ok";
+	}
+
+	@RequestMapping("/uploadimage/result")
+	public String img(@RequestParam("token") String token) {
+
+
+		return memoryCache.get(token);
 	}
 }

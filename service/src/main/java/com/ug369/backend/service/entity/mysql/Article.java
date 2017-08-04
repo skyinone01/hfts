@@ -15,7 +15,7 @@ public class Article {
     private Long id;
     private Date createtime;
     private String title;
-    private String content;
+    private byte[] content;
     private String source;
     private String author;
     private String typestr;
@@ -49,11 +49,11 @@ public class Article {
         this.title = title;
     }
 
-    public String getContent() {
+    public byte[] getContent() {
         return content;
     }
 
-    public void setContent(String content) {
+    public void setContent(byte[] content) {
         this.content = content;
     }
 

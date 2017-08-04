@@ -23,6 +23,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -125,7 +126,7 @@ public class ArticleController {
     }
 
     @RequestMapping(value = "/article/{id}", method = RequestMethod.GET)
-    public DataResponse<ArticleRequest> detailOne(@PathVariable("id") long id) {
+    public DataResponse<ArticleRequest> detailOne(@PathVariable("id") long id) throws UnsupportedEncodingException {
 
         ArticleRequest response = articleService.findOne(id);
         return new DataResponse<>(response);
@@ -151,8 +152,9 @@ public class ArticleController {
      *
      */
     @RequestMapping(value = "/articleCategory", method = RequestMethod.GET)
-    public PagedDataResponse<ArticleLevelRequest> level(@PageDefault PageRequest pageRequest) {
-        PagedResult<ArticleLevelRequest> labels = articleService.getAllLevel(pageRequest);
+    public PagedDataResponse<ArticleLevelRequest> level(@PageDefault PageRequest pageRequest,
+                                                        @RequestParam(value = "searchValue",required = false) String name) {
+        PagedResult<ArticleLevelRequest> labels = articleService.getAllLevel(pageRequest,name);
 
         return PagedDataResponse.of(labels);
     }
@@ -181,7 +183,8 @@ public class ArticleController {
      *
      */
     @RequestMapping(value = "/articleLabel", method = RequestMethod.GET)
-    public PagedDataResponse<ArticleLabelRequest> label(@PageDefault PageRequest pageRequest,@RequestParam("searchValue") String name) {
+    public PagedDataResponse<ArticleLabelRequest> label(@PageDefault PageRequest pageRequest,
+                                                        @RequestParam(value = "searchValue",required = false) String name) {
         PagedResult<ArticleLabelRequest> labels = articleService.getAllLabel(pageRequest,name);
 
         return PagedDataResponse.of(labels);

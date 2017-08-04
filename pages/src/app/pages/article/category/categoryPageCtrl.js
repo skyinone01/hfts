@@ -14,7 +14,7 @@
 		$scope.types = [];
 		$scope.update = [];
 
-		$scope.perPage = 30;
+		$scope.perPage = 20;
 		$scope.page = 1;
 		$scope.listType = function(){
 			appBase.doGet("articleCategory?page="+$scope.page+"&perPage="+$scope.perPage,null,function(response){
@@ -119,12 +119,12 @@
 
 		$scope.btnNext = function(){
 			$scope.page = $scope.page+1;
-			$scope.listItem();
+			$scope.listType()
 		};
 
 		$scope.btnUp = function () {
 			$scope.page = $scope.page-1;
-			$scope.listItem();
+			$scope.listType()
 		};
 
 	}

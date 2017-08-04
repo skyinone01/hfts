@@ -27,7 +27,9 @@
                                 <label for="inputName" class="col-sm-3 control-label">类别</label>
                                 <div class="col-sm-9">
                                     <select name="type" ng-options="s.text for s in categories"
-                                            class="editable-input ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="category"
+                                            class="editable-input ng-pristine ng-untouched ng-valid ng-not-empty"
+                                            ng-model="category"
+                                            ng-disabled="inputEdit"
                                             style="width:150px;height:30px"
                                             tabindex="-98" style="" ng-change="selectType(this)">
                                     </select>
@@ -48,10 +50,10 @@
                                 <div class="labels col-sm-9">
                                     <div>
                                         <div ng-repeat="label in item.labels" style="display: inline-flex; border: 1.3px solid #63bbb2;border-radius:30%;margin-left:5px;margin-right:5px">
-                                            <i class="ion-ios-close-outline" ng-click="removeLabel(label.id)" ></i>
+                                            <i class="ion-ios-close-outline" ng-disabled="inputEdit" ng-click="removeLabel(label.id)" ></i>
                                             <span class="tag label" style="color: #63bbb2">{{label.name}}</span>
                                         </div>
-                                        <div style="display: inline-flex" ng-click="addLabel()">
+                                        <div style="display: inline-flex" ng-click="addLabel()" ng-disabled="inputEdit">
                                             <i class="ion-plus-round"></i><span class="label-input-stub" >添加</span>
                                         </div>
                                     </div>
@@ -161,7 +163,7 @@
 
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-primary" ng-click="getContentTxt('container')" ng-show="showSubmit()"
+            <button type="button" class="btn btn-primary" ng-click="saveOrUpdate()" ng-show="showSubmit()"
                     ng-disabled="myForm.content.$error.required ||
                             myForm.title.$error.required||
                             myForm.type.$error.required||

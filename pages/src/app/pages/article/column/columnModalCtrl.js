@@ -58,7 +58,7 @@
 		}else{
              $scope.listItems();
 		}
-
+		$scope.useables=[{'value':2,'text':'通过'},{'value':3,'text':'不通过'}]
         $scope.deleteArticle = function(id){
             var param = "addable=0&column="+modelId+"&article="+id;
             appBase.doPut("articleColumn?"+param,null,function(response){
@@ -66,6 +66,14 @@
 				appBase.bubMsg("操作成功");
 			})
         }
+
+		$scope.showApply = function(){
+			if(op ==10){
+				return true;
+			}else {
+				return false
+			}
+		}
 
 		$scope.showSubmit = function(){
 			if(op ==2){
@@ -83,7 +91,7 @@
 
 		//op 1 新增 2详情 3编辑 4 审核
 		$scope.initInput= function(){
-			if(op==2 || op==4){
+			if(op==2 || op==10){
 				return true;
 			}else {
 				return false;
@@ -143,16 +151,9 @@
 			$uibModalInstance.close($scope.link);
 		};
 
-		$scope.showApply = function(){
-			if(op ==4){
-				return true;
-			}else {
-				return false
-			}
-		}
 
 		$scope.setApplyStatus = function(){
-			var status = $scope.welcome.status;
+			var status = $scope.item.status;
 			if (status ==2 || status ==3){
 				$scope.applyStatus = status;
 				if(status==3){

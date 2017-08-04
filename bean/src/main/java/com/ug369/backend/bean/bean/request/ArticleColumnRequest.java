@@ -10,8 +10,11 @@ public class ArticleColumnRequest {
 
     private long id;
     private String title;
+    private String applypeople;
+    private String applydetail;
     private String picture;
     private boolean paymode;
+    private int status;
     private PayItem payItem1;
     private PayItem payItem2;
     private PayItem payItem3;
@@ -51,6 +54,22 @@ public class ArticleColumnRequest {
 
     public PayItem getPayItem1() {
         return payItem1;
+    }
+
+    public String getApplypeople() {
+        return applypeople;
+    }
+
+    public void setApplypeople(String applypeople) {
+        this.applypeople = applypeople;
+    }
+
+    public String getApplydetail() {
+        return applydetail;
+    }
+
+    public void setApplydetail(String applydetail) {
+        this.applydetail = applydetail;
     }
 
     public void setPayItem1(int price, int months) {
@@ -100,7 +119,15 @@ public class ArticleColumnRequest {
         this.articles = articles;
     }
 
-    public void setArticles(String title,long id) {
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public void setArticles(String title, long id) {
         SimpleArticle article = new SimpleArticle();
         article.setId(id);
         article.setTitle(title);

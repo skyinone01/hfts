@@ -55,13 +55,14 @@
                     $scope.item=response.data;
                     //$("#data_date").val(response.data.begin_date)
                     for(var i =0;i<$scope.categories.length;i++){
-                        if($scope.categories[i].value == response.data.type){
-                            $scope.type = $scope.categories[i];
+                        if($scope.categories[i].value == response.data.typeid){
+                            $scope.category = $scope.categories[i];
                         }
                     }
                     if( response.data.status==3 && op==2){
                         $scope.showApplyDetail =true;
                     }
+					$scope.ueditorSetContent('container',$scope.item.content);
                     $scope.typeid = response.data.typeid;
                     $scope.typestr = response.data.typestr;
                     $scope.picmark = "mark"
@@ -116,7 +117,7 @@
 
 		//op 1 新增 2详情 3编辑 4 审核
 		$scope.initInput= function(){
-			if(op==2 || op==4){
+			if(op==2 || op==10){
 				return true;
 			}else {
 				return false;
@@ -135,15 +136,26 @@
 			$uibModalInstance.close($scope.link);
 		};
 		$scope.showApply = function(){
-			if(op ==4){
+			if(op ==10){
 				return true;
 			}else {
 				return false
 			}
 		}
-
+		$scope.useables=[{'value':2,'text':'通过'},{'value':3,'text':'不通过'}]
+		$scope.showUseable = function(useable){
+			if(useable){
+				$scope.useableStr = "是";
+			}else{
+				$scope.useableStr = "否";
+			}
+			if (op == 1){
+				return false;
+			}
+			return true;
+		}
 		$scope.setApplyStatus = function(){
-			var status = $scope.welcome.status;
+			var status = $scope.item.status;
 			if (status ==2 || status ==3){
 				$scope.applyStatus = status;
 				if(status==3){
@@ -153,6 +165,8 @@
 				}
 			}
 		}
+
+
 		$scope.selectType = function(x){
 			$scope.typeid = x.category.value;
 			$scope.typestr = x.category.text;
@@ -163,14 +177,14 @@
 			formData.append('file',$scope.file);
 			formData.append('id', $scope.item.id);
 			formData.append('title',$scope.item.title);
-			formData.append('content',$scope.item.content);
+			formData.append('content',$scope.ueditorGetContent('container'));
 			formData.append('summary',$scope.item.summary);
 			formData.append('source',$scope.item.source);
 			formData.append('author',$scope.item.author);
 			formData.append('typeid',$scope.typeid);
 			formData.append('typestr',$scope.typestr);
-			if($scope.welcome.applydetail !=null){
-				formData.append('applyDetail',$scope.welcome.applydetail);
+			if($scope.item.applydetail !=null){
+				formData.append('applyDetail',$scope.item.applydetail);
 			}
 			if ($scope.applyStatus != null){
 				formData.append('status',$scope.applyStatus);

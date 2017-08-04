@@ -1,7 +1,10 @@
 package com.ug369.backend.service.service;
 
 import com.ug369.backend.bean.base.request.PageRequest;
-import com.ug369.backend.bean.bean.request.*;
+import com.ug369.backend.bean.bean.request.ArticleColumnRequest;
+import com.ug369.backend.bean.bean.request.ArticleLabelRequest;
+import com.ug369.backend.bean.bean.request.ArticleLevelRequest;
+import com.ug369.backend.bean.bean.request.ArticleRequest;
 import com.ug369.backend.bean.exception.UgmsStatus;
 import com.ug369.backend.bean.exception.UserException;
 import com.ug369.backend.bean.result.PagedResult;
@@ -12,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.UnsupportedEncodingException;
 import java.util.*;
 
 /**
@@ -51,14 +55,14 @@ public class ArticleService {
 
     }
 
-    public ArticleRequest findOne(long id) {
+    public ArticleRequest findOne(long id) throws UnsupportedEncodingException {
 
         Article one = articleRepository.findOne(id);
         if(one == null){
             throw new UserException(UgmsStatus.NOT_FOUND);
         }
         ArticleRequest result = new ArticleRequest();
-        result.setContent(one.getContent());
+        result.setContent(new String(one.getContent(),"utf-8"));
         result.setTypestr(one.getTypestr());
         result.setTypeid(one.getTypeid());
         result.setApplydetail(one.getApplydetail());
@@ -69,6 +73,7 @@ public class ArticleService {
         result.setSummary(one.getSummary());
         result.setAuthor(one.getAuthor());
         result.setSource(one.getSource());
+        result.setCreatetime(one.getCreatetime());
 
         List<ArticleLabelRe> labelRes = articleLabelReRepository.findByArticle(one.getId());
         if (labelRes!=null && labelRes.size()>0){
@@ -115,7 +120,7 @@ public class ArticleService {
             one.setTitle(request.getTitle());
         }
         if (!StringUtils.isEmpty(request.getContent())){
-            one.setContent(request.getContent());
+            one.setContent(request.getContent().getBytes());
         }
         if (!StringUtils.isEmpty(request.getSummary())){
             one.setSummary(request.getSummary());
@@ -167,7 +172,10 @@ public class ArticleService {
     @Transactional
     public PagedResult<ArticleLabelRequest> getAllLabel(PageRequest pageRequest,String name) {
         Map param = new HashMap<>();
-        param.put("name","%"+name+"%");
+        if (!StringUtils.isEmpty(name)){
+            param.put("title","%"+name+"%");
+        }
+
         return articleLabelRepository.getDataPageBatch("Article.getAllLabel", "Article.getLabelCount",param , pageRequest);
 
     }
@@ -197,8 +205,13 @@ public class ArticleService {
     }
 
     @Transactional
-    public PagedResult<ArticleLevelRequest> getAllLevel(PageRequest pageRequest) {
-        return articleLabelRepository.getDataPageBatch("Article.getAllLevel", "Article.getLevelCount", new HashMap<>(), pageRequest);
+    public PagedResult<ArticleLevelRequest> getAllLevel(PageRequest pageRequest,String name) {
+        Map param = new HashMap<>();
+        if (!StringUtils.isEmpty(name)){
+            param.put("name","%"+name+"%");
+        }
+
+        return articleLabelRepository.getDataPageBatch("Article.getAllLevel", "Article.getLevelCount", param, pageRequest);
 
     }
 
@@ -222,6 +235,12 @@ public class ArticleService {
     public void deleteLevel(Long id){
         if (id==null || id.longValue()==0){
             throw new UserException(UgmsStatus.BAD_REQUEST);
+        }
+        Map param = new HashMap<>();
+        param.put("typeid",id.intValue());
+        Integer articles = articleRepository.getObject("Article.existTypeCount",param);
+        if (articles !=null && articles.intValue() > 0){
+            throw new UserException(UgmsStatus.LOGIC_ERROR,"类型已经被使用，不能删除");
         }
         articleLevelRepository.delete(id);
     }
@@ -251,6 +270,9 @@ public class ArticleService {
             result.setPaymode(one.getPaymode());
             result.setTitle(one.getTitle());
             result.setPicture(one.getPicture());
+            result.setStatus(one.getStatus());
+            result.setApplydetail(one.getApplydetail());
+            result.setApplypeople(one.getApplypeople());
             if (one.getPaymode() ){
                 String payitem1 = one.getPayitem1();
                 String[] split = payitem1.split("_");

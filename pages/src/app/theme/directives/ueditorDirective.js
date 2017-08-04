@@ -20,7 +20,7 @@
                                 'fontfamily', 'fontsize', 'indent', '|',
                                 'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
                                 'link', 'unlink',  '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
-                                'simpleupload', 'insertimage',  '|',
+                                'simpleupload',  '|',
                                 'emotion','horizontal', 'spechars',  'inserttable'
                             ] ;
                             scope.ueditorId=attr.id;
@@ -29,7 +29,7 @@
                                 //var configf ={content : '<p>test1</p>',focus : true,indentValue:'2em',initialFrameWidth:1000,initialFrameHeight:320,readonly : false ,enableAutoSave: false,saveInterval: 500,fullscreen : false,imagePopup:true,allHtmlEnabled:false,functions :['map','insertimage','insertvideo','attachment','insertcode','template', 'background', 'wordimage']};
                                 //scope.config=$.parseJSON(configf);
                                 scope.config={
-                                    "content" : "<p>test1</p>",
+                                    "content" : "<p></p>",
                                     "focus" : true,
                                     "indentValue":"2em",
                                     "initialFrameWidth":1000,
@@ -40,7 +40,7 @@
                                     "fullscreen" : false,
                                     "imagePopup":true,
                                     "allHtmlEnabled":false,
-                                    "functions" :['map','insertimage','insertvideo','attachment','insertcode','template', 'background', 'wordimage']
+                                    "functions" :[]
                                 }
                                 editorFunctions=editorFunctions.concat(scope.config.functions);
                             }
@@ -65,17 +65,17 @@
 
                             });
 
-                            scope.ueditorSetContent=function(id,value){
+                            scope.$parent.ueditorSetContent=function(id,value){
                                 var editor = UE.getEditor(id);
                                 editor.setContent(value);
                             }
 
-                            scope.ueditorGetContent=function(id){
+                            scope.$parent.ueditorGetContent=function(id){
                                 var editor = UE.getEditor(id);
                                 return editor.getContent();
                             }
 
-                            scope.ueditorGetContentTxt=function(id){
+                            scope.$parent.ueditorGetContentTxt=function(id){
                                 var editor = UE.getEditor(id);
                                 return editor.getContentTxt();
                             }

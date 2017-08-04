@@ -25,6 +25,8 @@ gulp.task('inject', ['scripts', 'styles', 'injectAuth', 'inject404', 'copyVendor
     path.join(conf.paths.src, '/assets/js/**/*.js'),
     path.join(conf.paths.src, '/app/**/*.module.js'),
     path.join(conf.paths.src, '/app/**/*.js'),
+    path.join('!' + conf.paths.src, '/app/**/ueditor/**/*.js'),
+    path.join('!' + conf.paths.src, '/app/**/ueditor/*.js'),
     path.join('!' + conf.paths.src, '/app/**/*.spec.js'),
     path.join('!' + conf.paths.src, '/app/**/*.mock.js'),
   ])

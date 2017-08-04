@@ -23833,6 +23833,7 @@ UE.plugin.register('autoupload', function (){
                 }
             }catch(er){
                 errorHandler(me.getLang('autoupload.loadError'));
+                console.log("json error")
             }
         });
         xhr.send(fd);
@@ -24517,23 +24518,53 @@ UE.plugin.register('simpleupload', function (){
 
                 function callback(){
                     try{
-                        var link, json, loader,
-                            body = (iframe.contentDocument || iframe.contentWindow.document).body,
-                            result = body.innerText || body.textContent || '';
-                        json = (new Function("return " + result))();
-                        link = me.options.imageUrlPrefix + json.url;
-                        if(json.state == 'SUCCESS' && json.url) {
-                            loader = me.document.getElementById(loadingId);
-                            loader.setAttribute('src', link);
-                            loader.setAttribute('_src', link);
-                            loader.setAttribute('title', json.title || '');
-                            loader.setAttribute('alt', json.original || '');
-                            loader.removeAttribute('id');
-                            domUtils.removeClasses(loader, 'loadingclass');
-                        } else {
-                            showErrorLoader && showErrorLoader(json.state);
-                        }
+					
+						//var link, json, loader,
+                          //  body = (iframe.contentDocument || iframe.contentWindow.document).body,
+                          //  result = body.innerText || body.textContent || '';
+						  
+						
+						var arr,token,reg=new RegExp("(^| )"+"token"+"=([^;]*)(;|$)");
+						if(arr=document.cookie.match(reg)){
+							token = unescape(arr[2]);
+							var Days = 1/48;
+							var exp = new Date();
+							exp.setTime(exp.getTime() + Days*24*60*60*1000);
+							document.cookie = "token" + "="+ escape (token) + ";expires=" + exp.toGMTString()+ "; path=/";
+						}
+						$.ajax({
+							//url: "http://127.0.0.1:8080/uploadimage/result?token="+token,
+							url: "http://120.26.221.137:8080/uploadimage/result?token="+token,
+							type: "GET",
+							success: function(data) {
+								var link, json, loader,body,result;
+								result= data;
+							
+								json = (new Function("return " + result))();
+								link = me.options.imageUrlPrefix + json.url;
+								console.log("json"+json)
+								if(json.state == 'SUCCESS' && json.url) {
+									loader = me.document.getElementById(loadingId);
+									loader.setAttribute('src', link);
+									loader.setAttribute('_src', link);
+									loader.setAttribute('title', json.title || '');
+									loader.setAttribute('alt', json.original || '');
+									loader.removeAttribute('id');
+									domUtils.removeClasses(loader, 'loadingclass');
+								} else {
+									showErrorLoader && showErrorLoader(json.state);
+									console.log("json error"+json)
+								}
+							
+							}
+						});
+                     
+                        
+                       
                     }catch(er){
+                        console.log("json error"+json)
+						
+						
                         showErrorLoader && showErrorLoader(me.getLang('simpleupload.loadError'));
                     }
                     form.reset();

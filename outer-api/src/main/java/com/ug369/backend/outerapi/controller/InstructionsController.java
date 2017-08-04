@@ -1,13 +1,5 @@
 package com.ug369.backend.outerapi.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-
-import sun.misc.BASE64Decoder;
-
 import com.ug369.backend.bean.base.request.PageRequest;
 import com.ug369.backend.bean.base.response.BasicResponse;
 import com.ug369.backend.bean.base.response.PagedDataResponse;
@@ -19,18 +11,16 @@ import com.ug369.backend.service.entity.mysql.Instructions;
 import com.ug369.backend.service.entity.mysql.InstructionsXH;
 import com.ug369.backend.service.service.InstructionsService;
 import com.ug369.backend.utils.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.*;
+import sun.misc.BASE64Decoder;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.StringReader;
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.List;
 
 
 @RestController
@@ -42,7 +32,7 @@ public class InstructionsController {
     @Value("${ugms.static.file.path}")
     private String filePath;
 
-    @Value("${ugms.static.url}")
+    @Value("${ugms.static.instructions.url}")
     private String staticUrl;
     
     @RequestMapping(value = "/instructions", method = RequestMethod.GET)

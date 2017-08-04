@@ -40,7 +40,7 @@ public class StringUtils {
             return false;
         }
         String tmpName = fileName.substring(fileName.lastIndexOf(".") + 1,
-                fileName.length());
+                fileName.length()).toLowerCase();
         if (!org.apache.commons.lang3.StringUtils.isEmpty(tmpName) && IMGS.contains(tmpName)){
             return true;
         }

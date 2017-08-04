@@ -1,5 +1,6 @@
 package com.ug369.backend.bean.bean.request;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -18,7 +19,16 @@ public class ArticleRequest {
     private String summary;
     private String applypeople;
     private String applydetail;
+    private Date createtime;
     private List<LabelBean> labels;
+
+    public Date getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
+    }
 
     public List<LabelBean> getLabels() {
         return labels;

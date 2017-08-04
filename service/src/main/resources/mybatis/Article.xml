@@ -4,6 +4,7 @@
 
 <mapper namespace="Article">
 
+
     <select id="getAll" resultType="com.ug369.backend.bean.bean.request.ArticleRequest">
         SELECT *
         FROM ug_article u
@@ -49,9 +50,9 @@
     <select id="getAllLabel" resultType="com.ug369.backend.bean.bean.request.ArticleLabelRequest">
         SELECT *
         FROM ug_article_label u
-        where 1 =1
+        where 1=1
         <if test="title != null">
-            u.name like #{name}
+            and u.name like #{title}
         </if>
 
     </select>
@@ -61,19 +62,27 @@
         FROM ug_article_label u
         where 1=1
         <if test="title != null">
-            u.name like #{name}
+            and u.name like #{title}
         </if>
     </select>
 
     <select id="getAllLevel" resultType="com.ug369.backend.bean.bean.request.ArticleLevelRequest">
         SELECT *
         FROM ug_article_category u
+        where 1=1
+        <if test="name != null">
+            u.name like #{name}
+        </if>
 
     </select>
 
     <select id="getLevelCount" resultType="int">
         SELECT COUNT(u.id)
         FROM ug_article_category u
+        where 1=1
+        <if test="name != null">
+            u.name like #{name}
+        </if>
     </select>
 
     <select id="getAllColumn" resultType="com.ug369.backend.service.entity.mysql.ArticleColumn">
@@ -93,6 +102,15 @@
         where 1 =1
         <if test="title != null">
             and u.title like #{title}
+        </if>
+    </select>
+
+    <select id="existTypeCount" resultType="int">
+        SELECT COUNT(u.id)
+        FROM ug_article u
+        where 1 =1
+        <if test="typeid != null">
+            and u.typeid = #{typeid}
         </if>
     </select>
 

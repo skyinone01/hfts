@@ -15,7 +15,7 @@
 		$scope.role = [];
 		$scope.update = [];
 
-		$scope.perPage = 30;
+		$scope.perPage =20;
 		$scope.page = 1;
 		$scope.listType = function(searchValue){
 			appBase.doGet("articleLabel?page="+$scope.page+"&perPage="+$scope.perPage+"&searchValue="+searchValue,null,function(response){
@@ -156,12 +156,12 @@
 
 		$scope.btnNext = function(){
 			$scope.page = $scope.page+1;
-			$scope.listItem();
+			$scope.listType($scope.searchValue.value);
 		};
 
 		$scope.btnUp = function () {
 			$scope.page = $scope.page-1;
-			$scope.listItem();
+			$scope.listType($scope.searchValue.value);
 		};
 
 	}

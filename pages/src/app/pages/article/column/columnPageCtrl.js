@@ -31,7 +31,7 @@
 		$scope.showButton = function(index,name){
 			if(name == 'edit'){
 				var s = $scope.items[index].status;
-				if(s==4){
+				if(s==4||s==5||s==1||s==2){
 					return false;
 				}
 				return true;
@@ -87,7 +87,7 @@
 			}
 			if(name == 'copy'){
 				var s = $scope.items[index].status;
-				if(s==5 ){
+				if(s==5 || s==4){
 					return true;
 				}
 				return false;
@@ -153,7 +153,7 @@
 			}
 			appBase.doPut("articleColumn/"+id+"?op="+op,null,function(response){
 				appBase.bubMsg("操作成功");
-				$scope.listItem();
+				$scope.listItem($scope.searchValue.value);
 			});
 		}
 
@@ -177,12 +177,12 @@
 
 		$scope.btnNext = function(){
 			$scope.page = $scope.page+1;
-			$scope.listItem();
+			$scope.listItem($scope.searchValue.value);
 		};
 
 		$scope.btnUp = function () {
 			$scope.page = $scope.page-1;
-			$scope.listItem();
+			$scope.listItem($scope.searchValue.value);
 		};
 
 	}
