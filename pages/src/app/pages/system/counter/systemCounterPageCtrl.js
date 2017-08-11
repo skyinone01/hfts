@@ -26,19 +26,6 @@
                     "valueField": "useage"
                     //"balloonText": "<div style='margin:5px; font-size:19px;'>Visits:<b>[[value]]</b></div>"
                 }],
-                //"chartScrollbar": {
-                //    "graph": "g1",
-                //    "scrollbarHeight": 80,
-                //    "backgroundAlpha": 0,
-                //    "selectedBackgroundAlpha": 0.1,
-                //    "selectedBackgroundColor": "#888888",
-                //    "graphFillAlpha": 0,
-                //    "graphLineAlpha": 0.5,
-                //    "selectedGraphFillAlpha": 0,
-                //    "selectedGraphLineAlpha": 1,
-                //    "autoGridCount": true,
-                //    "color": "#AAAAAA"
-                //},
                 "chartCursor": {
                     "categoryBalloonDateFormat": "JJ:NN, DD MMMM",
                     "cursorPosition": "mouse"
@@ -54,11 +41,6 @@
                 }
             });
 
-            //chart.addListener("dataUpdated", zoomChart);
-            //zoomChart();
-            //function zoomChart() {
-            //    chart.zoomToIndexes(data.length - 250, data.length - 100);
-            //}
         }
 
         appBase.doGet("monitor",null,function(res){

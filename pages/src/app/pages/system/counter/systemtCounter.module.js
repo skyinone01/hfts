@@ -15,7 +15,7 @@
             url: '/monitor',
             templateUrl: 'app/pages/system/counter/systemCounter.html',
             controller: 'SystemCounterPageCtrl',
-            title: '资源监控',
+            title: '用户交易面板',
             sidebarMeta: {
                 order: 10,
             },

@@ -20,12 +20,12 @@
     'BlurAdmin.pages.common',
 
     'BlurAdmin.pages.userResource',
-    'BlurAdmin.pages.content',
+    //'BlurAdmin.pages.content',
     'BlurAdmin.pages.userStatistics',
-    'BlurAdmin.pages.userInstructions',
-    'BlurAdmin.pages.customer',
+    //'BlurAdmin.pages.userInstructions',
+    //'BlurAdmin.pages.customer',
     'BlurAdmin.pages.system',
-    'BlurAdmin.pages.article',
+    //'BlurAdmin.pages.article',
     //'BlurAdmin.pages.auth',
   ])
       .config(routeConfig);

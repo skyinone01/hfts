@@ -1,13 +1,11 @@
 package com.ug369.backend.service.component.HTTP;
 
 
-import ch.qos.logback.core.rolling.helper.Compressor;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import redis.clients.jedis.Jedis;
 
 import java.io.IOException;
 
@@ -25,7 +23,7 @@ public class HttpAsyncCallback implements Callback {
 
     @Override
     public void onFailure(Call call, IOException e) {
-        log.error("fail2send pid={}",subscribeInfo.getPid(),e);
+        log.error("fail2send pid={}",e);
         cacheMsg();
         statusChange();
     }
@@ -33,7 +31,7 @@ public class HttpAsyncCallback implements Callback {
     @Override
     public void onResponse(Call call, Response response) throws IOException {
         if (response.code() != 200) {
-            log.error("fail2send pid={}, statusCode={}",subscribeInfo.getPid(), response.code());
+            log.error("fail2send pid={}, statusCode={}", response.code());
 //            log.info("recv sub url return , but status code is {}", response.code());
             cacheMsg();
             statusChange();
@@ -42,31 +40,10 @@ public class HttpAsyncCallback implements Callback {
     }
 
     private void cacheMsg() {
-        validator.getErrRecords().get(subscribeInfo.getPid()).incrementAndGet();
-        try (Jedis j = RedisBroker.getResource()) {
-            j.lpush(Util.generateRedisCacheKey(subscribeInfo.getPid()), Compressor.compress(httpBodyMsg));
-        }
+
     }
 
     private void statusChange() {
-        switch (subscribeInfo.getStatus()) {
-            case OK:
-                if (validator.getErrRecords().get(subscribeInfo.getPid()).get() != 0) {
-                    subscribeInfo.setStatus(ProjectStatus.ERR_HAPPEN);
-                    subscribeInfo.setFirstErrHappenTime(System.currentTimeMillis());
-                    UnsentMsgChecker.setErrHappen(subscribeInfo.getPid());
-                }
-                break;
-            case ERR_HAPPEN:
-                if (validator.getErrRecords().get(subscribeInfo.getPid()).get() > Config.FREEZE_PROJECT_ERROR_NUM_THRESHOLD
-                        || (subscribeInfo.getFirstErrHappenTime() > 0 && subscribeInfo.getFirstErrHappenTime() + Config.FREEZE_PROJECT_TIME_THRESHOLD < System.currentTimeMillis())) {
-                    subscribeInfo.setStatus(ProjectStatus.NOT_CONNECTED);
-                }
-                break;
-            case SENDING:
-                break;
-            case NOT_CONNECTED:
-                break;
-        }
+
     }
 }
