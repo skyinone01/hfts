@@ -8,77 +8,126 @@
         .controller('SystemCounterPageCtrl', SystemCounterPageCtrl);
 
     /** @ngInject */
-    function SystemCounterPageCtrl($scope,baConfig, layoutPaths, appBase,baUtil) {
+    function SystemCounterPageCtrl($scope, appBase, toastr, toastrConfig) {
+        $scope.markets=[{'value':0,'text':'Yunbi'},{'value':1,'text':'Okcoin'},{'value':1,'text':'BTER'},{'value':1,'text':'BTCTRADE'}]
+        $scope.buys=[{'price':1,'volume':'0.369'},{'price':1,'volume':'7.39'},
+                        {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'},
+                        {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'},
+                        {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'},
+                        {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'},
+                        {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'}]
+        $scope.sells=[{'price':1,'volume':'0.369'},{'price':1,'volume':'7.39'},
+            {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'},
+            {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'},
+            {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'},
+            {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'},
+            {'price':1,'volume':'5.9'},{'price':1,'volume':'0.3693'}]
 
-        var chart =$scope.paintDada = function(data,id){
-            AmCharts.makeChart(id, {
-                "type": "serial",
-                "theme": "light",
-                "marginRight": 80,
-                "dataProvider": data,
-                "valueAxes": [{
-                    "position": "left",
-                    "title": id
-                }],
-                "graphs": [{
-                    "id": "g1",
-                    "fillAlphas": 0.4,
-                    "valueField": "useage"
-                    //"balloonText": "<div style='margin:5px; font-size:19px;'>Visits:<b>[[value]]</b></div>"
-                }],
-                "chartCursor": {
-                    "categoryBalloonDateFormat": "JJ:NN, DD MMMM",
-                    "cursorPosition": "mouse"
-                },
-                "categoryField": "datepoint",
-                "categoryAxis": {
-                    "minPeriod": "mm",
-                    "parseDates": true
-                },
-                "export": {
-                    "enabled": true,
-                    "dateFormat": "yyyy-MM-dd hh:mm:ss"
-                }
-            });
 
+        //appBase.doGet("monitor",null,function(res){
+        //
+        //})
+
+        $scope.selectMarket = function(){
+            alert("select");
         }
 
-        appBase.doGet("monitor",null,function(res){
 
-            if(res!=null && res.data!=null && res.data.cpu.length > 0){
-                $scope.paintDada(res.data.cpu,"cpu");
-                $scope.paintDada(res.data.memory,"memory");
-                $scope.paintDada(res.data.disk,"storage");
-                $scope.paintDada(res.data.network,"network");
+        var defaultConfig = angular.copy(toastrConfig);
+        $scope.types = ['success', 'error', 'info', 'warning'];
 
-                $scope.tmemory = res.data.memory[0].total;
-                $scope.tstorage = res.data.disk[0].total;
-                $scope.tnetwork = res.data.network[0].total;
-            }else {
-                appBase.bubMsg("没有相应数据")
+        $scope.quotes = [
+            {
+                title: 'Come to Freenode',
+                message: 'We rock at <em>#angularjs</em>',
+                options: {
+                    allowHtml: true
+                }
+            },
+            {
+                title: 'Looking for bootstrap?',
+                message: 'Try ui-bootstrap out!'
+            },
+            {
+                title: 'Wants a better router?',
+                message: 'We have you covered with ui-router'
+            },
+            {
+                title: 'Angular 2',
+                message: 'Is gonna rock the world'
+            },
+            {
+                title: null,
+                message: 'Titles are not always needed'
+            },
+            {
+                title: null,
+                message: 'Toastr rock!'
+            },
+            {
+                title: 'What about nice html?',
+                message: '<strong>Sure you <em>can!</em></strong>',
+                options: {
+                    allowHtml: true
+                }
+            },
+            {
+                title: 'Ionic is <em>cool</em>',
+                message: 'Best mobile framework ever',
+                options: {
+                    allowHtml: true
+                }
             }
+        ];
+
+        var openedToasts = [];
+        $scope.options = {
+            autoDismiss: false,
+            positionClass: 'toast-top-right',
+            type: 'info',
+            timeOut: '5000',
+            extendedTimeOut: '2000',
+            allowHtml: false,
+            closeButton: false,
+            tapToDismiss: true,
+            progressBar: false,
+            newestOnTop: true,
+            maxOpened: 0,
+            preventDuplicates: false,
+            preventOpenDuplicates: false,
+            title: "Some title here",
+            msg: "Type your message here"
+        };
+
+
+        $scope.clearLastToast = function () {
+            var toast = openedToasts.pop();
+            toastr.clear(toast);
+        };
+
+        $scope.clearToasts = function () {
+            toastr.clear();
+        };
+
+        $scope.openRandomToast = function () {
+            var type = Math.floor(Math.random() * $scope.types.length);
+            var quote = Math.floor(Math.random() * $scope.quotes.length);
+            var toastType = $scope.types[type];
+            var toastQuote = $scope.quotes[quote];
+            openedToasts.push(toastr[toastType](toastQuote.message, toastQuote.title, toastQuote.options));
+            $scope.optionsStr = "toastr." + toastType + "(\'" + toastQuote.message + "\', \'" + toastQuote.title + "', " + JSON.stringify(toastQuote.options || {}, null, 2) + ")";
+        };
+
+        $scope.openToast = function () {
+            angular.extend(toastrConfig, $scope.options);
+            openedToasts.push(toastr[$scope.options.type]($scope.options.msg, $scope.options.title));
+            var strOptions = {};
+            for (var o in  $scope.options) if (o != 'msg' && o != 'title')strOptions[o] = $scope.options[o];
+            $scope.optionsStr = "toastr." + $scope.options.type + "(\'" + $scope.options.msg + "\', \'" + $scope.options.title + "\', " + JSON.stringify(strOptions, null, 2) + ")";
+        };
+
+        $scope.$on('$destroy', function iVeBeenDismissed() {
+            angular.extend(toastrConfig, defaultConfig);
         })
-
-
-        $scope.setDate = function(){
-            $scope.realDate = $("#data_id").val();
-            appBase.doGet("monitor?date="+$("#data_id").val(),null,function(res){
-                if(res!=null && res.data!=null &&res.data.cpu.length > 0){
-                    $scope.paintDada(res.data.cpu,"cpu");
-                    $scope.paintDada(res.data.memory,"memory");
-                    $scope.paintDada(res.data.disk,"storage");
-                    $scope.paintDada(res.data.network,"network");
-
-                    $scope.tmemory = res.data.memory[0].total;
-                    $scope.tstorage = res.data.disk[0].total;
-                    $scope.tnetwork = res.data.network[0].total;
-                }else {
-                    appBase.bubMsg("没有相应数据")
-                }
-
-            })
-        }
-
-
     }
 })();
