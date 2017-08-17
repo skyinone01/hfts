@@ -16,7 +16,7 @@
 
 
 <div class="row">
-  <div class="col-md-12 col-lg-4" style="height: 600px;width:300px">
+  <div class="col-md-12 col-lg-4" style="height: 450px;width:300px">
   <div ba-panel ba-panel-title="委托购买" ba-panel-class="xsmall-panel with-scroll light-text" >
     <table class="table table-bordered table-hover table-condensed">
       <tr>
@@ -47,7 +47,7 @@
   </div>
   </div>
 
-  <div class="col-md-12 col-lg-4" style="height: 600px;width:300px">
+  <div class="col-md-12 col-lg-4" style="height: 450px;width:300px">
     <div ba-panel ba-panel-title="委托卖出" ba-panel-class="xsmall-panel with-scroll light-text" >
       <table class="table table-bordered table-hover table-condensed">
         <tr>
@@ -78,39 +78,42 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-3 col-sm-4 toastr-radio-setup">
-      <div class="control">
-        <label for="message">Message</label>
-        <textarea ng-model="options.msg" class="form-control" id="message" rows="3"
-                  placeholder="Enter a message ..."></textarea>
-      </div>
-      <div id="toastTypeGroup">
-        <div class="controls radio-controls">
-          <label class="radio-header">Toast Type</label>
-          <label class="radio custom-radio">
-            <input type="radio" ng-model="options.type" name="toasts" value="success"/><span>Success</span>
-          </label>
-          <label class="radio custom-radio">
-            <input type="radio" ng-model="options.type" name="toasts" value="info"/><span>Info</span>
-          </label>
+  <div class="col-md-3 col-sm-4 toastr-radio-setup" style="margin-left:180px">
+    <div class="control">
+      <label >当前价格:   </label><h3 style="margin-left:60px;color: red">{{currentPrice}}</h3>
+    </div>
+
+    <div id="tradeStyle" style="margin-top: 50px">
+      <div class="controls radio-controls">
+        <label class="radio-header">策略类型：</label>
+        <label class="radio custom-radio">
+          <input type="radio" ng-model="operation.policy" name="policy" value="dvalue"/><span>按浮动价格差额</span>
+        </label>
+        <label class="radio custom-radio">
+          <input type="radio" ng-model="operation.policy" name="policy" value="drate"/><span>按浮动价格比例</span>
+        </label>
+        <div style="margin-left: 20px" >
+
+          <div ng-show="(operation.policy =='dvalue')">差额值：<input type="text" style="width: 100px" name="dvalue" ng-model="dvalue" required></div>
+         </div>
+        <div style="margin-left: 20px"  >
+          <div ng-show="(operation.policy=='drate')">差额比例：<input  type="text" style="width: 100px" name="drate" ng-model="drate" required>%</div>
         </div>
+
       </div>
     </div>
 
-    <div class="col-md-3 col-sm-12">
-      <label>Result:</label>
-      <pre class="result-toastr" id='toastrOptions'>{{optionsStr}}</pre>
+    <div style="margin-top: 20px;margin-bottom: 50px">
+        <button ng-click="exePolicy()" class="btn btn-primary"  style="margin-left: 200px">执行</button>
     </div>
-    <div class="col-md-12 button-row">
-      <button ng-click="openToast()" class="btn btn-primary">Open Toast</button>
-      <button ng-click="openRandomToast()" class="btn btn-primary">Random Toast</button>
-      <button ng-click="clearToasts()" class="btn btn-danger">Clear Toasts</button>
-      <button ng-click="clearLastToast()" class="btn btn-danger">Clear Last Toast</button>
+
+    <div>
+
+      <label>执行结果:</label>
+       <textarea ng-model="operation.result" class="form-control"  rows="3"
+                 placeholder="等待执行 ..."></textarea>
     </div>
+
   </div>
-
 </div>
-
-
 </div>
