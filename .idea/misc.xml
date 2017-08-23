@@ -10,6 +10,19 @@
       </list>
     </option>
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Article.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Banner.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Basic.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Description.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Discovery.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Instructions.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/LeaveMessage.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Message.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Monitor.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Statistics.xml" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Welcome.xml" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
   <component name="SvnBranchConfigurationManager">
     <option name="myConfigurationMap">

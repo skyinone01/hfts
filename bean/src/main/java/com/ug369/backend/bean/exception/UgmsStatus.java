@@ -31,6 +31,7 @@ public enum UgmsStatus {
 
 
 	VALIDATE_FAILED(101,"验证失败"),
+	SYS_ERROR(101,"系统错误"),
 	;
 
 	

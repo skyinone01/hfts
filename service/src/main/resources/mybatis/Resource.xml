@@ -11,13 +11,13 @@
         rr.upable as upable,rr.downable as downable,
         rr.cancelable as cancelable,rr.releaseable,rr.copyable
         FROM ug_resource r,ug_role_resource rr
-        where r.id = rr.resource and rr.role = #{rid}
+        where r.id = rr.resource and rr.role = #{rid}  and r.status =1
     </select>
 
     <select id="getResourceByRole" parameterType="long" resultType="list">
         SELECT r.id
         FROM ug_resource r,ug_role_resource rr
-        where r.id = rr.resource and rr.role = #{rid}
+        where r.id = rr.resource and rr.role = #{rid} and r.status =1
     </select>
 
 
@@ -25,11 +25,13 @@
         SELECT u.id as id,u.name as name,u.state as state,
         u.url as url,u.description as description
         FROM ug_resource u
+        WHERE u.status =1
     </select>
 
     <select id="getCount" resultType="int">
         SELECT count(id)
         FROM ug_resource
+        WHERE status =1
     </select>
 
     <delete id="deleteByRole" parameterType="long">
