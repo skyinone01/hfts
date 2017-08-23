@@ -16,7 +16,7 @@
 
 
 <div class="row">
-  <div class="col-md-12 col-lg-4" style="height: 450px;width:300px">
+  <div class="col-md-12 col-lg-4" style="height: 850px;width:300px">
   <div ba-panel ba-panel-title="委托购买" ba-panel-class="xsmall-panel with-scroll light-text" >
     <table class="table table-bordered table-hover table-condensed">
       <tr>
@@ -32,12 +32,12 @@
         </td>
         <td >
         <span  >
-          {{ buy.price || '' }}
+          {{ buy.p || '' }}
         </span>
         </td>
         <td >
         <span  >
-          {{ buy.volume || '' }}
+          {{ buy.n || '' }}
         </span>
         </td>
 
@@ -47,7 +47,7 @@
   </div>
   </div>
 
-  <div class="col-md-12 col-lg-4" style="height: 450px;width:300px">
+  <div class="col-md-12 col-lg-4" style="height:850px;width:300px">
     <div ba-panel ba-panel-title="委托卖出" ba-panel-class="xsmall-panel with-scroll light-text" >
       <table class="table table-bordered table-hover table-condensed">
         <tr>
@@ -63,12 +63,12 @@
           </td>
           <td >
         <span  >
-          {{ sell.price || '' }}
+          {{ sell.p || '' }}
         </span>
           </td>
           <td >
         <span  >
-          {{ sell.volume || '' }}
+          {{ sell.n || '' }}
         </span>
           </td>
 

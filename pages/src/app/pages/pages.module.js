@@ -21,7 +21,7 @@
 
     'BlurAdmin.pages.userResource',
     //'BlurAdmin.pages.content',
-    'BlurAdmin.pages.userStatistics',
+    // 'BlurAdmin.pages.userStatistics',
     //'BlurAdmin.pages.userInstructions',
     //'BlurAdmin.pages.customer',
     'BlurAdmin.pages.system',
