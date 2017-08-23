@@ -1,6 +1,6 @@
 package com.ug369.backend.outerapi.security;
 
-import com.baidu.ueditor.ActionEnter;
+//import com.baidu.ueditor.ActionEnter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ug369.backend.bean.base.request.WebUser;
 import com.ug369.backend.bean.exception.UserException;
@@ -70,30 +70,30 @@ public class AuthenticationFilter extends OncePerRequestFilter {
 		}
 
 
-		if(request.getRequestURI().contains("controller")){
-
-			request.setCharacterEncoding( "utf-8" );
-			response.setHeader("Content-Type" , "text/html");
-			String action = request.getParameter("action");
-			//本地调试和服务调试切换
-			String rootPath = filePath;
-//			String rootPath = "/E:/shanghaihuisheng/ug-mgmt/outer-api/target/classes";
-			System.out.println(rootPath);
-			String result = new ActionEnter( request, rootPath ).exec();
-
-			if( action!=null &&
-					(action.equals("listfile") || action.equals("listimage") ) ){
-				rootPath = rootPath.replace("\\", "/");
-				result = result.replaceAll(rootPath, "");
-			}
-			if (action.equals("uploadimage")){
-				memoryCache.put(token,result);
-			}
-			PrintWriter writer = response.getWriter();
-			writer.write( result );
-			System.out.println(result);
-			return;
-		}
+//		if(request.getRequestURI().contains("controller")){
+//
+//			request.setCharacterEncoding( "utf-8" );
+//			response.setHeader("Content-Type" , "text/html");
+//			String action = request.getParameter("action");
+//			//本地调试和服务调试切换
+//			String rootPath = filePath;
+////			String rootPath = "/E:/shanghaihuisheng/ug-mgmt/outer-api/target/classes";
+//			System.out.println(rootPath);
+//			String result = new ActionEnter( request, rootPath ).exec();
+//
+//			if( action!=null &&
+//					(action.equals("listfile") || action.equals("listimage") ) ){
+//				rootPath = rootPath.replace("\\", "/");
+//				result = result.replaceAll(rootPath, "");
+//			}
+//			if (action.equals("uploadimage")){
+//				memoryCache.put(token,result);
+//			}
+//			PrintWriter writer = response.getWriter();
+//			writer.write( result );
+//			System.out.println(result);
+//			return;
+//		}
 
 //		if(request.getRequestURI().contains("uploadimage/result")){
 //			request.setCharacterEncoding( "utf-8" );
