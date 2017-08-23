@@ -5,6 +5,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -61,6 +63,23 @@ public class HTTPSendor {
             return httpClient.newCall(request).execute();
         } catch (IOException e) {
             log.error(e.toString());
+            return null;
+        }
+    }
+
+    public static Response getSync(String url,Map<String,String> headers) {
+        Request.Builder builder = new Request.Builder();
+        builder.url(url)
+                .header("Accept-Encoding", "*")
+                .header("User-Agent", "Http Monitor");
+        if (headers!=null&&headers.size()>0){
+            Set<Map.Entry<String, String>> entries = headers.entrySet();
+            entries.forEach(o-> builder.addHeader(o.getKey(),o.getValue()));
+        }
+        try {
+            return httpClient.newCall(builder.build()).execute();
+        } catch (IOException e) {
+            log.error("http get",e);
             return null;
         }
     }

@@ -3,20 +3,23 @@ package com.ug369.backend.service.entity.mysql;
 import javax.persistence.*;
 import java.io.Serializable;
 
+
 /**
  * Created by Roy on 2017/3/10.
  */
 @Entity
-@Table(name = "ug_user_role")
-public class UserRole implements Serializable {
+@Table(name = "ug_role")
+public class UserRole implements Serializable{
+	private static final long serialVersionUID = -8566197653568234573L;
 
-    private static final long serialVersionUID = 2406271872055393481L;
-
-    @Id
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private long role;
-    private long user;
+
+    @Column(name = "name", length = 32)
+    private String name;
+    private String code;
+    private String description;
 
     public long getId() {
         return id;
@@ -26,19 +29,27 @@ public class UserRole implements Serializable {
         this.id = id;
     }
 
-    public long getRole() {
-        return role;
+    public String getName() {
+        return name;
     }
 
-    public void setRole(long role) {
-        this.role = role;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public long getUser() {
-        return user;
+    public String getCode() {
+        return code;
     }
 
-    public void setUser(long user) {
-        this.user = user;
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
