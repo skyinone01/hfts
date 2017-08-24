@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -33,6 +34,8 @@ public class UserPanelController {
 
     @RequestMapping(value = "/markets", method = RequestMethod.GET)
     public DataResponse getMarket() {
+
+        System.out.println(Instant.now().getEpochSecond());
         String markets;
         String rates;
         try {
