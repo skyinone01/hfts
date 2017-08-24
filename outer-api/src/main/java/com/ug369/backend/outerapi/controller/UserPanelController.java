@@ -2,11 +2,11 @@ package com.ug369.backend.outerapi.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ug369.backend.bean.base.response.DataResponse;
 import com.ug369.backend.bean.exception.UgmsStatus;
 import com.ug369.backend.bean.exception.UserException;
 import com.ug369.backend.service.component.HTTP.HTTPSendor;
+import com.ug369.backend.service.service.PlatformService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,21 +27,24 @@ import java.util.Map;
 public class UserPanelController {
 
     @Autowired
-    private ObjectMapper objectMapper;
+    private PlatformService platformService;
 
     private static Logger logger = LoggerFactory.getLogger(UserPanelController.class);
 
     @RequestMapping(value = "/markets", method = RequestMethod.GET)
     public DataResponse getMarket() {
-        String sync;
+        String markets;
+        String rates;
         try {
-            sync = HTTPSendor.getSync("https://www.btctrade.com/coin/rmb/btc/order.js", null).body().string();
+            markets = HTTPSendor.getSync("https://www.btctrade.com/coin/rmb/btc/order.js", null).body().string();
+            rates = HTTPSendor.getSync("https://www.btctrade.com/coin/rmb/rate.js", null).body().string();
         } catch (IOException e) {
             logger.error("markets error", e);
             throw new UserException(UgmsStatus.SYS_ERROR, "获取交易数据失败，稍后再试");
         }
-        JSONObject object = (JSONObject) JSONObject.parse(sync);
-        JSONArray items = object.getJSONArray("d");
+        JSONObject marketsObj = (JSONObject) JSONObject.parse(markets);
+        JSONObject ratesObj = (JSONObject) JSONObject.parse(rates);
+        JSONArray items = marketsObj.getJSONArray("d");
         List buys = new ArrayList<>();
         List sells = new ArrayList<>();
         if (items!=null&&items.size()>0){
@@ -64,7 +67,15 @@ public class UserPanelController {
         Map ret =new HashMap<>();
         ret.put("buys",buys);
         ret.put("sells",sells);
+        ret.put("currentPrice",ratesObj.get("btc"));
 
         return new DataResponse<>(ret);
+    }
+
+    @RequestMapping(value = "/platforms", method = RequestMethod.GET)
+    public DataResponse  getPlatform(){
+
+        return new DataResponse(platformService.getPlatforms());
+
     }
 }
