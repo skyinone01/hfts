@@ -14,9 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * Created by Roy on 2017/3/18.
- */
+
 @Component
 public class UgmsAccessDeniedHandler implements AccessDeniedHandler {
 

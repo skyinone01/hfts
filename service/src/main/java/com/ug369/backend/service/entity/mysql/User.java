@@ -3,9 +3,6 @@ package com.ug369.backend.service.entity.mysql;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * Created by roy on 2017/3/12.
- */
 
 @Entity
 @Table(name = "ug_user")

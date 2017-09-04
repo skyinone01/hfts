@@ -27,9 +27,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.List;
 
-/**
- * Created by Roy on 2017/3/8.
- */
+
 @ControllerAdvice
 public class ExceptionMessageHandler {
 

@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- *
- */
+
 
 public class DataHandlerImpl implements DataHandler {
     private Object dataParameter = new HashMap<String, Object>();

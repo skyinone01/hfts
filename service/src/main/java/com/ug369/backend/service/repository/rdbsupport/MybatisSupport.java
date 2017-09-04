@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Roy on 2017/3/30.
+ *
  * 功能描述：提供mysql数据的操作，使用mybatis封装的通用接口支持</p>
  * <ul>
  * <li>1. sql语句定义在resources目录下的mybatis目录。</li>

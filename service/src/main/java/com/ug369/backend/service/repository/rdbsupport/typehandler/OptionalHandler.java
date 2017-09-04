@@ -10,9 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
 
-/**
- * Created by Roy on 2017/3/13.
- */
+
 @MappedTypes({Optional.class})
 public class OptionalHandler extends BaseTypeHandler<Optional> {
 

@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 
-/**
- * Created by Roy on 2017/3/10.
- */
+
 @Entity
 @Table(name = "ug_platform")
 public class Platform implements Serializable{

@@ -13,9 +13,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Roy on 2017/3/29.
- */
+
 public class AbstractRDBRepository<T, ID extends Serializable> extends SimpleJpaRepository<T, ID> implements RDBRepository<T, ID> {
 
 

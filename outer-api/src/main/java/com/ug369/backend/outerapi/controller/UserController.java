@@ -14,9 +14,7 @@ import com.ug369.backend.service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * Created by Roy on 2017/3/10.
- */
+
 @RestController
 public class UserController {
 

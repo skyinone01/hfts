@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-/**
- * Created by Roy on 2017/3/18.
- */
+
 @Configuration
 @EnableAutoConfiguration(exclude = MongoAutoConfiguration.class)
 @EnableJpaRepositories(basePackageClasses = MysqlRepositoryMarker.class,

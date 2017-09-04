@@ -10,9 +10,7 @@ import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-/**
- * Created by Roy on 2017/3/19.
- */
+
 @MappedTypes({OffsetDateTime.class})
 public class OffsetDateTimeHandler extends BaseTypeHandler<OffsetDateTime> {
     public OffsetDateTimeHandler() {

@@ -19,9 +19,7 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import java.util.Locale;
 
 
-/**
- * Created by roy on 2017/3/8.
- */
+
 @Configuration
 public class UgmsConfiguration extends WebMvcConfigurerAdapter {
 

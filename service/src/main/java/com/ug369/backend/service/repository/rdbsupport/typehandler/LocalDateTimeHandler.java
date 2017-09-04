@@ -10,9 +10,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.GregorianCalendar;
 
-/**
- * Created by Roy on 2017/3/19.
- */
+
 @MappedTypes({LocalDateTime.class})
 public class LocalDateTimeHandler extends BaseTypeHandler<LocalDateTime> {
     public LocalDateTimeHandler() {

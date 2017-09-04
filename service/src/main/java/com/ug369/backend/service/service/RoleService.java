@@ -17,9 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Roy on 2017/3/20.
- */
+
 @Service
 public class RoleService {
 

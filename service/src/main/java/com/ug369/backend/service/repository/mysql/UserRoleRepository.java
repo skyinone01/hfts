@@ -6,9 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * Created by Roy on 2017/3/23.
- */
+
 @Repository
 public interface UserRoleRepository extends RDBRepository<UserRole, Long> {
 

@@ -22,9 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.nio.ByteBuffer;
 import java.time.Instant;
 
-/**
- * Created by Roy on 2017/3/8.
- */
+
 @RestController
 public class TokenController {
 	@Autowired

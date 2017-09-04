@@ -25,11 +25,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-/**
- * Created by roy on 2017/3/7.
- */
 
 @Component
 public class AuthenticationFilter extends OncePerRequestFilter {

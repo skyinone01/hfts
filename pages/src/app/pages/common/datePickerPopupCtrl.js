@@ -1,7 +1,4 @@
-/**
- * Created by n.poltoratsky
- * on 23.06.2016.
- */
+
 (function(){
     'use strict';
 

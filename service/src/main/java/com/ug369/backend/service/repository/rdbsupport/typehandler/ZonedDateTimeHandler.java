@@ -10,9 +10,7 @@ import java.time.ZonedDateTime;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-/**
- * Created by Roy on 2017/3/19.
- */
+
 @MappedTypes({ZonedDateTime.class})
 public class ZonedDateTimeHandler extends BaseTypeHandler<ZonedDateTime> {
     public ZonedDateTimeHandler() {

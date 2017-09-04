@@ -7,9 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import java.util.List;
 
-/**
- * Created by Roy on 2017/3/8.
- */
+
 @Configuration
 public class MvcConfiguration extends WebMvcConfigurerAdapter {
 

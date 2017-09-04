@@ -1,7 +1,4 @@
-/**
- * @author roy
- * created on 03.12.2017
- */
+
 (function () {
     'use strict';
 

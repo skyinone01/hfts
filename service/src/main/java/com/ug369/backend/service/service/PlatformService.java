@@ -10,9 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Roy on 2017/8/24.
- */
+
 @Service
 public class PlatformService {
 

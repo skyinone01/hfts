@@ -6,9 +6,6 @@ import org.hibernate.boot.model.naming.ImplicitBasicColumnNameSource;
 import org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by Roy on 2017/4/7.
- */
 @Component
 public class MyImplicitNamingStrategy extends ImplicitNamingStrategyJpaCompliantImpl {
     @Override

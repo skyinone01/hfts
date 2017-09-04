@@ -3,9 +3,7 @@ package com.ug369.backend.service.entity.mysql;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * Created by Roy on 2017/3/10.
- */
+
 @Entity
 @Table(name = "ug_resource")
 public class Resource implements Serializable {

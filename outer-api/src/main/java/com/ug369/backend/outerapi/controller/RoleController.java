@@ -10,9 +10,7 @@ import com.ug369.backend.service.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * Created by Administrator on 2017/3/18.
- */
+
 @RestController
 public class RoleController {
 

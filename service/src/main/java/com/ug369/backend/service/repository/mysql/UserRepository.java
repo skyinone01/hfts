@@ -8,9 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * Created by roy on 2017/3/10.
- */
+
 @Repository
 public interface UserRepository extends RDBRepository<User, Long> {
 	@Query("SELECT CASE WHEN COUNT(u) > 0 THEN true ELSE false END FROM User u WHERE u.username = :username")

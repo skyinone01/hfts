@@ -9,9 +9,7 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
-/**
- * Created by Roy on 2017/3/8.
- */
+
 @Component
 public class UserResolver implements HandlerMethodArgumentResolver {
 

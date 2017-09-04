@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  * 数据库操作mybatis支持接口类
- * Created by Roy on 2017/3/29.
+ *
  */
 public interface MybatisData {
 

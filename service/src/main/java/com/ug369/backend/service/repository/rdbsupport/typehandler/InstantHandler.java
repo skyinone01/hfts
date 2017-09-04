@@ -7,9 +7,7 @@ import org.apache.ibatis.type.MappedTypes;
 import java.sql.*;
 import java.time.Instant;
 
-/**
- * Created by Roy on 2017/3/19.
- */
+
 @MappedTypes({Instant.class})
 public class InstantHandler extends BaseTypeHandler<Instant> {
     public InstantHandler() {

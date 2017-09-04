@@ -7,9 +7,7 @@ import org.apache.ibatis.type.MappedTypes;
 import java.sql.*;
 import java.time.LocalTime;
 
-/**
- * Created by Roy on 2017/3/19.
- */
+
 @MappedTypes({LocalTime.class})
 public class LocalTimeHandler extends BaseTypeHandler<LocalTime> {
     public LocalTimeHandler() {

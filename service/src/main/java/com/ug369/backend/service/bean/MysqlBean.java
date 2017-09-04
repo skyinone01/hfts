@@ -12,9 +12,6 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
 
-/**
- * Created by Roy on 2017/3/9.
- */
 @Configuration
 public class MysqlBean {
 

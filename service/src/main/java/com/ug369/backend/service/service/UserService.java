@@ -20,9 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by roy on 2017/3/17.
- */
+
 @Service
 public class UserService {
     @Autowired

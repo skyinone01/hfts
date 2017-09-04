@@ -13,9 +13,6 @@ import javax.persistence.EntityManager;
 import java.io.Serializable;
 
 
-/**
- * Created by Roy on 2017/3/30.
- */
 public class RDBRepositoryBean<R extends JpaRepository<S, ID>, S, ID extends Serializable>
         extends JpaRepositoryFactoryBean<R, S, ID> {
 

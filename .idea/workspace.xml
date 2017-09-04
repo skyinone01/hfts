@@ -2,16 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="750c3a07-6269-4ad0-9990-44a66ec8d49b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/config.module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/editableRowTable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManager.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManager.module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManagerPageCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/editableRowTable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfigPageCtrl.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/domain/UserImportTemplete.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/ExceptionMessageHandler.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/ExceptionMessageHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/UgmsConfiguration.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/UgmsConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/MemoryCache.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/MemoryCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/MvcConfiguration.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/MvcConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/MyImplicitNamingStrategy.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/MyImplicitNamingStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/PageDefault.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/PageDefault.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/PageResovler.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/PageResovler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/TimeZone.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/TimeZone.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/TimeZoneResovler.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/TimeZoneResovler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/UserInjected.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/UserInjected.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/UserResolver.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/UserResolver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/DemoController.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/DemoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/ResourceController.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/ResourceController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/RoleController.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/RoleController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/TokenController.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/TokenController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/UserController.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/UserPanelController.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/UserPanelController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/AuthenticationFilter.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/AuthenticationFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/MethodSecurityConfiguration.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/MethodSecurityConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/SecurityConfiguration.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/SecurityConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/UgmsAccessDeniedHandler.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/UgmsAccessDeniedHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/UgmsAuthenticationEntryPoint.java" afterPath="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/UgmsAuthenticationEntryPoint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/auth/auth.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/auth/auth.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/common/common.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/common/common.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/common/commonPageCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/common/commonPageCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/common/datePickerPopupCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/common/datePickerPopupCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/profile/ProfileModalCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/profile/ProfileModalCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/profile/ProfilePageCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/profile/ProfilePageCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/profile/profile.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/profile/profile.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/system/counter/systemtCounter.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/system/counter/systemtCounter.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/system/operations/userManager.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/system/operations/userManager.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/system/operations/userManagerPageCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/system/operations/userManagerPageCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/system/orders/orders.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/system/orders/orders.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/system/orders/ordersPageCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/system/orders/ordersPageCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/config.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/config.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManager.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManager.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManagerPageCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManagerPageCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfigPageCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfigPageCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/userManager/resource/resourceManager.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/userManager/resource/resourceManager.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/userManager/resource/resourceManagerPageCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/userManager/resource/resourceManagerPageCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/userManager/role/roleManager.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/userManager/role/roleManager.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/userManager/role/roleManagerPageCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/userManager/role/roleManagerPageCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/userManager/user/userManager.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/userManager/user/userManager.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/userManager/user/userManagerPageCtrl.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/userManager/user/userManagerPageCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/src/app/pages/userManager/userResouce.module.js" afterPath="$PROJECT_DIR$/pages/src/app/pages/userManager/userResouce.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/src/main/java/com/ug369/backend/RootMarker.java" afterPath="$PROJECT_DIR$/root/src/main/java/com/ug369/backend/RootMarker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/ServiceConfiguration.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/ServiceConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/bean/MysqlBean.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/bean/MysqlBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Platform.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Platform.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Resource.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Resource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Role.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Role.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/RoleResource.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/RoleResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/User.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/UserRole.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/UserRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/MysqlRepositoryMarker.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/MysqlRepositoryMarker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/PlatformRepository.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/PlatformRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/ResourceRepository.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/ResourceRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleRepository.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleResourceRepository.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleResourceRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRepository.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRoleRepository.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRoleRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/AbstractRDBRepository.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/AbstractRDBRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/MybatisSupport.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/MybatisSupport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/RDBRepository.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/RDBRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/RDBRepositoryBean.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/RDBRepositoryBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/component/MybatisData.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/component/MybatisData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/handler/DataHandlerImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/handler/DataHandlerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/InstantHandler.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/InstantHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalDateHandler.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalDateHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalDateTimeHandler.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalDateTimeHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalTimeHandler.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalTimeHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/OffsetDateTimeHandler.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/OffsetDateTimeHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/OptionalHandler.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/OptionalHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/ZonedDateTimeHandler.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/ZonedDateTimeHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/PlatformService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/PlatformService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/ResourceService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/ResourceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/RoleService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/RoleService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/UserService.java" afterPath="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/UserService.java" />
     </list>
     <ignored path="regina-webapi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,116 +126,7 @@
     <favorites_list name="regina-webapi" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="systemCounter.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/src/app/pages/system/counter/systemCounter.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-67.69231">
-              <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#div#1;n#div#2;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#1;n#div#1;n#div#2;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="systemCounterPageCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/src/app/pages/system/counter/systemCounterPageCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YunbiConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Bean/YunbiConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserPanelController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/UserPanelController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="113" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="113" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/TestMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="103" selection-start-line="27" selection-start-column="103" selection-end-line="27" selection-end-column="103" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tradeConfig.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8461537">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="75" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.module.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/config.module.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tradeConfig.module.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.module.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userManager.module.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManager.module.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tradeConfigPageCtrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfigPageCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5405405">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -230,57 +192,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/src/app/pages/article/column/columnModal.html" />
-        <option value="$PROJECT_DIR$/service/src/main/resources/mybatis.xml" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/article/article/articlePageCtrl.js" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/article/column/columnPageCtrl.js" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/article/column/columnModalCtrl.js" />
-        <option value="$PROJECT_DIR$/bean/src/main/java/com/ug369/backend/bean/bean/request/ArticleColumnRequest.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/ArticleService.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/com/ug369/backend/utils/StringUtils.java" />
-        <option value="$PROJECT_DIR$/pages/src/app/app.js" />
-        <option value="$PROJECT_DIR$/pages/src/app/theme/theme.constants.js" />
-        <option value="$PROJECT_DIR$/pages/src/sass/common.scss" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/ExecuteEngine.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Thread/ThreadExecutor.java" />
-        <option value="$PROJECT_DIR$/utils/pom.xml" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/Config/Config.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Thread/Checker.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/ThreadExecutor.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Task/TradeTask.java" />
-        <option value="$PROJECT_DIR$/service/pom.xml" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/HTTP/HttpAsyncCallback.java" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/system/counter/systemtCounter.module.js" />
-        <option value="$PROJECT_DIR$/pages/.tmp/serve/app/main.css" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/ui/panels/panels.html" />
-        <option value="$PROJECT_DIR$/pages/src/app/theme/components/pageTop/pageTop.html" />
-        <option value="$PROJECT_DIR$/pages/src/auth.html" />
-        <option value="$PROJECT_DIR$/pages/src/index.html" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Bean/TradeConfig.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/market/Yunbi.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Bean/YunbiConfig.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Thread/Trader.java" />
-        <option value="$MAVEN_REPOSITORY$/org/bitcoin/peatioJavaClient/1.0-SNAPSHOT/peatioJavaClient-1.0-SNAPSHOT.jar!/org/bitcoin/market/PeatioCNYApi.class" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/HTTP/HTTPSendor.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/UserRole.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/bean/SystemResouceCounter.java" />
-        <option value="$PROJECT_DIR$/service/src/main/resources/mybatis/Resource.xml" />
-        <option value="$PROJECT_DIR$/bean/src/main/java/com/ug369/backend/bean/exception/UgmsStatus.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/com/ug369/backend/utils/SMSUtils.java" />
-        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/AuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/pages/src/sass/theme/conf/_variables.scss" />
-        <option value="$PROJECT_DIR$/pages/bower.json" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/pages.module.js" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Platform.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/PlatformRepository.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/PlatformService.java" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/system/counter/systemCounterPageCtrl.js" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/system/counter/systemCounter.html" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/TimeZone.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/TimeZoneResovler.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/UserInjected.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/UserResolver.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/DemoController.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/ResourceController.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/TokenController.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/UserController.java" />
         <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/UserPanelController.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/TestMain.java" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.html" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.module.js" />
-        <option value="$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManager.module.js" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/AuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/MethodSecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/UgmsAccessDeniedHandler.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/UgmsAuthenticationEntryPoint.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/ExceptionMessageHandler.java" />
+        <option value="$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/UgmsConfiguration.java" />
+        <option value="$PROJECT_DIR$/root/src/main/java/com/ug369/backend/RootMarker.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/bean/MysqlBean.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/PlatformService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/ResourceService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/UserService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/ServiceConfiguration.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/AbstractRDBRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/RDBRepositoryBean.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/RDBRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/MybatisSupport.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/InstantHandler.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalDateHandler.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalDateTimeHandler.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalTimeHandler.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/OffsetDateTimeHandler.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/OptionalHandler.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/ZonedDateTimeHandler.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/handler/DataHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/domain/UserImportTemplete.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/component/MybatisData.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/MysqlRepositoryMarker.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/PlatformRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/ResourceRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleResourceRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRoleRepository.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/UserRole.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/User.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/RoleResource.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Role.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Resource.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Platform.java" />
       </list>
     </option>
   </component>
@@ -364,7 +326,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -393,7 +354,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,11 +368,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,7 +390,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -433,7 +398,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -447,7 +420,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -455,11 +428,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,7 +454,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -481,11 +462,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rdbsupport" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,7 +492,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -507,15 +500,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="systemConfig" />
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rdbsupport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typehandler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -529,7 +534,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -537,19 +542,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="systemConfig" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tradeConfig" />
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rdbsupport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,7 +576,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -571,26 +584,513 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="systemConfig" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="marketConfig" />
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rdbsupport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rdbsupport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rdbsupport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rdbsupport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outer-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outer-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outer-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outerapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outer-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outerapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outer-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outerapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ug-mgmt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outer-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outerapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="annotation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -624,12 +1124,10 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ug369.backend.bean.bean.request" />
-      <recent name="com.ug369.backend.service.service" />
-      <recent name="com.ug369.backend.bean.bean.response" />
-      <recent name="com.ugms.backend.service.service" />
-      <recent name="com.heclouds.regina.service.service.impl" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\shanghaihuisheng\ug-mgmt\outer-api\src\main\resources\jsp" />
+      <recent name="E:\shanghaihuisheng\ug-mgmt\pages\src\app\pages\system\counter" />
+      <recent name="E:\regina\trunk\api\web\service\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ug369.backend.service.component" />
@@ -652,10 +1150,12 @@
       <recent name="com.ug369.backend.service.component.HTTP" />
       <recent name="com.ug369.backend.outerapi.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\shanghaihuisheng\ug-mgmt\outer-api\src\main\resources\jsp" />
-      <recent name="E:\shanghaihuisheng\ug-mgmt\pages\src\app\pages\system\counter" />
-      <recent name="E:\regina\trunk\api\web\service\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ug369.backend.bean.bean.request" />
+      <recent name="com.ug369.backend.service.service" />
+      <recent name="com.ug369.backend.bean.bean.response" />
+      <recent name="com.ugms.backend.service.service" />
+      <recent name="com.heclouds.regina.service.service.impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1518,13 +2018,8 @@
       <workItem from="1503489404912" duration="8495000" />
       <workItem from="1503535848293" duration="18146000" />
       <workItem from="1504060790286" duration="4957000" />
-      <workItem from="1504163964916" duration="5930000" />
-    </task>
-    <task id="LOCAL-00194" summary="1 输入框验证&#10;2 时间选择框插件&#10;3 状态转换&#10;">
-      <created>1490975428939</created>
-      <option name="number" value="00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1490975428940</updated>
+      <workItem from="1504163964916" duration="6266000" />
+      <workItem from="1504484967505" duration="2035000" />
     </task>
     <task id="LOCAL-00195" summary="1 菜单过虐&#10;">
       <created>1490975510575</created>
@@ -1814,11 +2309,17 @@
       <option name="project" value="LOCAL" />
       <updated>1503565491319</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="1">
+      <created>1504255223841</created>
+      <option name="number" value="00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1504255223854</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2268214000" />
+    <option name="totallyTimeSpent" value="2270585000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1830,16 +2331,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2023939" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31773666" sideWeight="0.49785867" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13247864" sideWeight="0.5256917" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14477211" sideWeight="0.4743083" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34167573" sideWeight="0.491453" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20348205" sideWeight="0.49305555" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18910256" sideWeight="0.4948052" order="0" side_tool="false" content_ui="combo" />
@@ -1850,6 +2353,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27136752" sideWeight="0.5051948" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32208923" sideWeight="0.48931623" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1858,13 +2362,10 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18171926" sideWeight="0.48931623" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31773666" sideWeight="0.49785867" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20348205" sideWeight="0.49305555" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41131666" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
@@ -1932,7 +2433,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/OptionalHandler.java</url>
-          <line>20</line>
+          <line>18</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
@@ -1992,7 +2493,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/InstantHandler.java</url>
-          <line>19</line>
+          <line>17</line>
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
@@ -2130,37 +2631,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/ResourceController.java</url>
-          <line>76</line>
+          <line>74</line>
           <properties />
           <option name="timeStamp" value="373" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/ExceptionMessageHandler.java</url>
-          <line>164</line>
+          <line>162</line>
           <properties />
           <option name="timeStamp" value="383" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/PageResovler.java</url>
-          <line>39</line>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="438" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/annotation/PageResovler.java</url>
-          <line>45</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="439" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/AuthenticationFilter.java</url>
-          <line>100</line>
+          <line>96</line>
           <properties />
           <option name="timeStamp" value="514" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/DemoController.java</url>
-          <line>46</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="525" />
         </line-breakpoint>
@@ -2178,171 +2679,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bitcoin/peatioJavaClient/1.0-SNAPSHOT/peatioJavaClient-1.0-SNAPSHOT.jar!/org/bitcoin/market/bean/BitOrder.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bitcoin/peatioJavaClient/1.0-SNAPSHOT/peatioJavaClient-1.0-SNAPSHOT.jar!/org/bitcoin/common/HttpUtils.class" />
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Bean/TradeConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Task/TradeTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/ThreadExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/UgmsConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/HTTP/HTTPSendor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="62" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleResourceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/ResourceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="36" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRoleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/RoleResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/UgmsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/bean/SystemResouceCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="56" selection-start-line="0" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/ResourceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/resources/mybatis/Resource.xml">
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/RoleController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Thread/Trader.java">
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/TokenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bean/src/main/java/com/ug369/backend/bean/exception/UgmsStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/DemoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2350,164 +2706,7 @@
     <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/ug369/backend/utils/SMSUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/AuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/system/orders/orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/system/orders/orders.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/system/orders/ordersPageCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/system/counter/systemCounterLineChart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/sass/theme/conf/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Platform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#458#459#0" expanded="false" />
-            <element signature="e#483#484#0" expanded="false" />
-            <element signature="e#517#518#0" expanded="false" />
-            <element signature="e#545#546#0" expanded="false" />
-            <element signature="e#576#577#0" expanded="false" />
-            <element signature="e#603#604#0" expanded="false" />
-            <element signature="e#643#644#0" expanded="false" />
-            <element signature="e#675#676#0" expanded="false" />
-            <element signature="e#705#706#0" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-            <element signature="e#769#770#0" expanded="false" />
-            <element signature="e#799#800#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/PlatformRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bitcoin/peatioJavaClient/1.0-SNAPSHOT/peatioJavaClient-1.0-SNAPSHOT.jar!/org/bitcoin/market/AbstractMarketApi.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34982333">
-          <caret line="208" column="35" selection-start-line="208" selection-start-column="35" selection-end-line="208" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bitcoin/peatioJavaClient/1.0-SNAPSHOT/peatioJavaClient-1.0-SNAPSHOT.jar!/org/bitcoin/market/PeatioCNYApi.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42402828">
-          <caret line="47" column="63" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/PlatformService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/pages.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.048076924">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/system/counter/systemCounter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-67.69231">
-          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#2;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#1;n#div#1;n#div#2;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/system/counter/systemCounterPageCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/Bean/YunbiConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2515,59 +2714,377 @@
     <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/controller/UserPanelController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="113" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="113" />
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/AuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/component/TestMain.java">
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/MethodSecurityConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="103" selection-start-line="27" selection-start-column="103" selection-end-line="27" selection-end-column="103" />
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/config.module.js">
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/SecurityConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8461537">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfig.module.js">
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/UgmsAccessDeniedHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/marketConfig/userManager.module.js">
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/security/UgmsAuthenticationEntryPoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/src/app/pages/systemConfig/tradeConfig/tradeConfigPageCtrl.js">
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/ExceptionMessageHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5405405">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/UgmsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outer-api/src/main/java/com/ug369/backend/outerapi/UgmsConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/src/main/java/com/ug369/backend/RootMarker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/bean/MysqlBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/PlatformService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/ResourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/ServiceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/AbstractRDBRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/RDBRepositoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/RDBRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/MybatisSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/InstantHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalDateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalDateTimeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/LocalTimeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/OffsetDateTimeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/OptionalHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/typehandler/ZonedDateTimeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/tools/DataTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/handler/DataHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/handler/DataHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/exception/CoreException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/domain/UgmsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/component/MybatisData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/rdbsupport/component/MybatisDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/MysqlRepositoryMarker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/PlatformRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/ResourceRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/RoleResourceRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/repository/mysql/UserRoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/RoleResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/ug369/backend/service/entity/mysql/Platform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9752252">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
