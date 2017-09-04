@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Config">
+
+    <select id="getMarkets"  resultType="com.ug369.backend.bean.bean.response.PlatformResponse">
+        SELECT p.id, p.name, p.url
+        FROM ug_platform p
+
+    </select>
+
+    <delete id="deleteMarket" parameterType="long">
+        DELETE
+        FROM ug_platform
+        WHERE id = #{pid}
+
+    </delete>
+
+
+    <select id="getTrades" parameterType="long" resultType="com.ug369.backend.bean.bean.response.TradeResponse">
+        SELECT p.secretKey, p.accessKey, p.platform,p.id,p.user
+        FROM ug_trade_config p
+        WHERE id = #{uid}
+
+    </select>
+
+
+</mapper>

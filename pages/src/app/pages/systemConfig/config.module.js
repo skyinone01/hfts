@@ -2,11 +2,10 @@
 (function () {
     'use strict';
 
-    angular.module('BlurAdmin.pages.userResource', [
+    angular.module('BlurAdmin.pages.systemConfig', [
 
-       'BlurAdmin.pages.userResource.userManager',
-       'BlurAdmin.pages.userResource.roleManager',
-       'BlurAdmin.pages.userResource.resourceManager',
+       'BlurAdmin.pages.systemConfig.marketConfig',
+       'BlurAdmin.pages.systemConfig.tradeConfig',
 
     ])
         .config(routeConfig);
@@ -15,17 +14,18 @@
     function routeConfig($stateProvider, $urlRouterProvider) {
 
         $stateProvider
-            .state('users', {
-                url: '/users',
+            .state('config', {
+                url: '/config',
                 template : '<ui-view  autoscroll="true" autoscroll-body-top></ui-view>',
                 abstract: true,
-                title: '用户资源管理',
+                title: '系统配置管理',
                 sidebarMeta: {
                     icon: 'ion-grid',
                     order: 40,
                 },
             });
-        $urlRouterProvider.when('/users','/users/user');
+
+        $urlRouterProvider.when('/config','/config/trade');
     }
 
 })();

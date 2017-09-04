@@ -2,17 +2,17 @@
 (function () {
     'use strict';
 
-    angular.module('BlurAdmin.pages.userResource.roleManager', [])
+    angular.module('BlurAdmin.pages.systemConfig.tradeConfig', [])
         .config(routeConfig);
 
     /** @ngInject */
-    function routeConfig($stateProvider, $urlRouterProvider) {
+    function routeConfig($stateProvider) {
 
-        $stateProvider.state('users.role', {
-            url: '/role',
+        $stateProvider.state('config.trade', {
+            url: '/trade',
             templateUrl: 'app/pages/systemConfig/tradeConfig/tradeConfig.html',
-            controller: 'RoleManagerPageCtrl',
-            title: '交易信息配置',
+            controller: 'TradeConfigPageCtrl',
+            title: '交易账户配置',
             sidebarMeta: {
                 order: 200,
             },

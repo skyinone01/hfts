@@ -2,145 +2,113 @@
 (function () {
     'use strict';
 
-    angular.module('BlurAdmin.pages.userResource.roleManager')
-        .controller('RoleManagerPageCtrl', RoleManagerPageCtrl);
-
-    angular.module('BlurAdmin.pages.userResource.roleManager')
-        .controller('RoleResourceCtrl', RoleResourceCtrl);
+    angular.module('BlurAdmin.pages.systemConfig.tradeConfig')
+        .controller('TradeConfigPageCtrl', TradeConfigPageCtrl);
 
     /** @ngInject */
-    function RoleManagerPageCtrl($scope, $filter,appBase,$uibModal) {
-        $scope.roles = [];
-        $scope.roleUpdate = [];
+    function TradeConfigPageCtrl($scope, $filter,appBase) {
 
-        $scope.listRole=function(){
-            appBase.doGet("common/roles",null,function(ret){
-                 $scope.roles = ret.data;
-                 $scope.roleUpdate = ret.data.slice(0);
+        $scope.smartTablePageSize = 10;
+        $scope.trades = [];
+        $scope.update = [];
+
+        $scope.listItems=function(){
+            appBase.doGet("config/trade",null,function(ret){
+                $scope.trades = ret.data;
+                $scope.update = ret.data.slice(0);
             })
         }
-        $scope.listRole();
-
-        $scope.removeRole = function(index) {
-            $scope.roles.splice(index, 1);
+        $scope.listItems();
+        $scope.removeItem = function(index) {
+            $scope.trades.splice(index, 1);
         };
-         //**role save
+
+        $scope.showOne = function(item) {
+            if(item.platform && $scope.markets.length) {
+                var selected = $filter('filter')($scope.markets, {value: item.platform});
+                return selected.length ? selected[0].text : '未设置';
+            } else return '未设置'
+        };
+        //**user save
         $scope.insert = [];
-        $scope.addRole = function() {
+        $scope.addItem = function() {
             $scope.inserted = {
                 id: 0,
-                name: '',
-                code:'',
-                description: ''
+                accessKey: '',
+                secretKey: '',
+                platform: 0,
+                url:''
             };
-            $scope.roles.push($scope.inserted);
+            $scope.markets.push($scope.inserted);
             $scope.insert.push($scope.inserted);
         };
-        $scope.saveRole = function(index){
+        $scope.saveItem = function(index){
             var data;
-            if(index >= $scope.roleUpdate.length){
-                data = $scope.insert[index-$scope.roleUpdate.length];
+            if(index >= $scope.update.length){
+                data = $scope.insert[index-$scope.update.length];
             }else{
-                data = $scope.roleUpdate[index];
+                data = $scope.update[index];
             }
-            if(data.name == null || data.name.trim() ==""){
-                appBase.bubMsg("角色名字不能为空");
-                $scope.listRole();
+
+            if(data.accessKey == null || data.accessKey.trim()==""){
+                appBase.bubMsg("accessKey 不能为空");
+                //$scope.listItems();
                 return;
             }
-            if(data.code == null || data.code.trim() ==""){
-                appBase.bubMsg("角色Code不能为空");
-                $scope.listRole();
+            if(data.secretKey == null || data.secretKey.trim()==""){
+                appBase.bubMsg("secretKey 不能为空");
                 return;
             }
-            if(data.description == null || data.description.trim() ==""){
-                appBase.bubMsg("角色描述不能为空");
-                $scope.listRole();
+            if(data.platform == null || data.platform.trim()==""){
+                appBase.bubMsg("platform 不能为空");
                 return;
             }
-            appBase.doPost("roles",data,function(ret){
+
+            appBase.doPost("config/trade",data,function(ret){
                 appBase.bubMsg("保存成功");
-                $scope.listRole();
+                $scope.listItems();
             })
         };
-        $scope.valueChange = function(parent,index){
-            //var key = $(event.target).parent().parent().prev().attr("e-name");
-            var key = parent.$editable.name;
-            var data = parent.$data;
-            if(index >= $scope.roleUpdate.length){
-                 switch(key){
-                       case "description":
-                           $scope.insert[index-$scope.roleUpdate.length].description =data;
-                             break;
-                       case "name":
-                           $scope.insert[index-$scope.roleUpdate.length].name =data;
-                             break;
-                       case "code":
-                           $scope.insert[index-$scope.roleUpdate.length].code =data;
-                             break;
-                 }
-            }else{
-                switch(key){
-                       case "description":
-                           $scope.roleUpdate[index].description =data;
-                             break;
-                       case "name":
-                           $scope.roleUpdate[index].name =data;
-                             break;
-                       case "code":
-                           $scope.roleUpdate[index].code =data;
-                           break;
-                 }
-            }
-        };
-
-        $scope.cancel = function(index){
-            $scope.listRole();
-        };
-
-        $scope.deleteRole = function(index){
-
-            appBase.doDelete("roles/"+$scope.roles[index].id,null,function(res){
-                appBase.bubMsg("删除成功");
-                $scope.listRole();
-            })
-
-        };
-
-        $scope.permission = function (index) {
-            var page = "app/pages/userManager/role/roleResource.html";
-            var modalInstance  = $uibModal.open({
-                animation: true,
-                templateUrl: page,
-                controller:'RoleResourceCtrl',
-                size: 2000,
-                resolve: {
-                    index:function(){
-                        return index;
-                    },
-                    roles:function(){
-                        return $scope.roles;
-                    }
-                }
-            });
-        };
-    }
-
-    function RoleResourceCtrl($scope,roles,index,appBase) {
-
-        $scope.visible = [{'value':'true','text':'true'},{'value':'false','text':'false'}]
-
-        $scope.items=[];
-        appBase.doGet("role/resources/?rid="+roles[index].id+"&perPage=50",null,function(ret){
-            $scope.items = ret.data.items;
-        })
-
-        $scope.save = function(callback){
-
-            appBase.doPut("role/resources/?rid="+roles[index].id,$scope.items,function(ret){
-                appBase.bubMsg("保存成功");
-                callback;
-            })
+        $scope.cancel = function(){
+            $scope.listItems();
         }
+        $scope.valueChange = function(parent,index){
+            //var  name = $(event.target).parent().parent().prev().attr("e-name");
+            var  name = parent.$editable.name;
+            var  data = parent.$data;
+            if(index >= $scope.update.length){
+                switch(name){
+                    case "accessKey":
+                        $scope.insert[index-$scope.update.length].accessKey =data;
+                        break;
+                    case "secretKey":
+                        $scope.insert[index-$scope.update.length].secretKey =data;
+                        break;
+                    case "platform":
+                        $scope.insert[index-$scope.update.length].platform =data;
+                        break;
+                }
+            }else{
+                switch(name){
+                    case "secretKey":
+                        $scope.update[index].secretKey =data;
+                        break;
+                    case "accessKey":
+                        $scope.update[index].accessKey =data;
+                        break;
+                    case "platform":
+                        $scope.update[index].platform =data;
+                        break;
+                }
+            }
+        };
+
+        $scope.deleteItem = function(index){
+            appBase.doDelete("config/trade/"+$scope.users[index].id,null,function(ret){
+                appBase.bubMsg("删除成功");
+                $scope.listItems();
+            })
+        };
     }
+
 })();

@@ -2,16 +2,16 @@
 (function () {
     'use strict';
 
-    angular.module('BlurAdmin.pages.userResource.userManager', [])
+    angular.module('BlurAdmin.pages.systemConfig.marketConfig', [])
         .config(routeConfig);
 
     /** @ngInject */
     function routeConfig($stateProvider, $urlRouterProvider) {
 
-        $stateProvider.state('users.user', {
-            url: '/user',
-            templateUrl: 'app/pages/userManager/user/userManager.html',
-            controller: 'UserManagerPageCtrl',
+        $stateProvider.state('config.market', {
+            url: '/market',
+            templateUrl: 'app/pages/systemConfig/marketConfig/marketConfig.html',
+            controller: 'MarketConfigPageCtrl',
             title: '交易市场配置',
             sidebarMeta: {
                 order: 100,
