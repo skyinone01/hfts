@@ -1,5 +1,5 @@
 <div class="add-row-editable-table">
-    <button has-permission="config.trade:edit" class="btn btn-primary" ng-click="addTrade()">新增交易账户</button>
+    <button has-permission="config.trade:edit" class="btn btn-primary" ng-click="addItem()">新增交易账户</button>
 </div>
 <table class="table table-bordered table-hover table-condensed">
     <tr>
@@ -17,25 +17,25 @@
         </span>
         </td>
         <td >
-        <span editable-text="user.accessKey"  e-name="accessKey" e-form="rowform" e-required  >
-          {{ trade.accessKey || '' }}
+        <span editable-text="trade.accesskey"  e-name="accessKey" e-form="rowform" e-required  >
+          {{ trade.accesskey || '' }}
         </span>
         </td>
         <td>
-        <span editable-text="user.secretKey"  e-name="secretKey" e-form="rowform" e-required  >
-          {{ trade.secretKey || '' }}
+        <span editable-text="trade.secretkey"  e-name="secretKey" e-form="rowform" e-required  >
+          {{ trade.secretkey || '' }}
         </span>
         </td>
         <td class="select-td" >
-        <span  editable-select="trade.platform"  e-name="role" e-form="rowform" e-selectpicker
-              e-ng-options="s.value as s.text for s in markets">
-          {{ showMarket(user) }}
+        <span  editable-select="trade.platform"  e-name="platform" e-form="rowform" e-selectpicker
+              e-ng-options="s.id as s.name for s in markets">
+          {{ showOne(trade) }}
         </span >
         </td>
         <td>
             <form editable-form name="rowform" ng-show="rowform.$visible" class="form-buttons form-inline"
                   shown="inserted == trade" >
-                <button type="submit" ng-click="saveTrade($index)"  ng-disabled="rowform.$waiting"  class="btn btn-primary editable-table-button btn-xs">
+                <button  ng-click="saveItem($index)"  ng-disabled="rowform.$waiting"  class="btn btn-primary editable-table-button btn-xs">
                     保存
                 </button>
                 <button type="button" ng-disabled="rowform.$waiting" ng-click="cancel(rowform.$cancel())" class="btn btn-default editable-table-button btn-xs">
@@ -43,8 +43,8 @@
                 </button>
             </form>
             <div class="buttons" ng-show="!rowform.$visible">
-                <button has-permission="users.user:edit" id="editbutton" class="btn btn-primary editable-table-button btn-xs" ng-click="rowform.$show()">编辑</button>
-                <button has-permission="users.user:delete" class="btn btn-danger editable-table-button btn-xs" ng-click="deleteUser($index)">删除</button>
+                <button has-permission="config.trade:edit" id="editbutton" class="btn btn-primary editable-table-button btn-xs" ng-click="rowform.$show()">编辑</button>
+                <button has-permission="config.trade:delete" class="btn btn-danger editable-table-button btn-xs" ng-click="deleteItem($index)">删除</button>
             </div>
         </td>
     </tr>

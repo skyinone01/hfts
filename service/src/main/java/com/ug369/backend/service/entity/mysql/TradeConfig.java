@@ -14,8 +14,8 @@ public class TradeConfig implements Serializable{
     private long id;
     private long platform;
     private long user;
-    private String accessKey;
-    private String secretKey;
+    private String accesskey;
+    private String secretkey;
 
     public long getId() {
         return id;
@@ -41,19 +41,19 @@ public class TradeConfig implements Serializable{
         this.user = user;
     }
 
-    public String getAccessKey() {
-        return accessKey;
+    public String getAccesskey() {
+        return accesskey;
     }
 
-    public void setAccessKey(String accessKey) {
-        this.accessKey = accessKey;
+    public void setAccesskey(String accesskey) {
+        this.accesskey = accesskey;
     }
 
-    public String getSecretKey() {
-        return secretKey;
+    public String getSecretkey() {
+        return secretkey;
     }
 
-    public void setSecretKey(String secretKey) {
-        this.secretKey = secretKey;
+    public void setSecretkey(String secretkey) {
+        this.secretkey = secretkey;
     }
 }

@@ -48,8 +48,8 @@ public class SystemConfigService {
         if (trade.getId() != 0){
             o.setId(trade.getId());
         }
-        o.setAccessKey(trade.getAccessKey());
-        o.setSecretKey(trade.getSecretKey());
+        o.setAccesskey(trade.getAccessKey());
+        o.setSecretkey(trade.getSecretKey());
         o.setPlatform(trade.getPlatform());
         o.setUser(user.getId());
         tradeConfigRepository.save(o);

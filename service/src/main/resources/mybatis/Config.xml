@@ -19,7 +19,7 @@
 
 
     <select id="getTrades" parameterType="long" resultType="com.ug369.backend.bean.bean.response.TradeResponse">
-        SELECT p.secretKey, p.accessKey, p.platform,p.id,p.user
+        SELECT p.secretkey, p.accesskey, p.platform,p.id,p.user
         FROM ug_trade_config p
         WHERE id = #{uid}
 

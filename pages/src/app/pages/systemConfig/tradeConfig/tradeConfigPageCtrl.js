@@ -11,6 +11,7 @@
         $scope.smartTablePageSize = 10;
         $scope.trades = [];
         $scope.update = [];
+        $scope.markets = [];
 
         $scope.listItems=function(){
             appBase.doGet("config/trade",null,function(ret){
@@ -18,15 +19,24 @@
                 $scope.update = ret.data.slice(0);
             })
         }
-        $scope.listItems();
+
+        $scope.listMarkets=function(){
+            appBase.doGet("config/market",null,function(ret){
+                $scope.markets = ret.data;
+                $scope.listItems();
+            })
+        }
+        $scope.listMarkets();
+
+
         $scope.removeItem = function(index) {
             $scope.trades.splice(index, 1);
         };
 
         $scope.showOne = function(item) {
             if(item.platform && $scope.markets.length) {
-                var selected = $filter('filter')($scope.markets, {value: item.platform});
-                return selected.length ? selected[0].text : '未设置';
+                var selected = $filter('filter')($scope.markets, {id: item.platform});
+                return selected.length ? selected[0].name : '未设置';
             } else return '未设置'
         };
         //**user save
@@ -34,12 +44,11 @@
         $scope.addItem = function() {
             $scope.inserted = {
                 id: 0,
-                accessKey: '',
-                secretKey: '',
-                platform: 0,
-                url:''
+                accesskey: '',
+                secretkey: '',
+                platform: 0
             };
-            $scope.markets.push($scope.inserted);
+            $scope.trades.push($scope.inserted);
             $scope.insert.push($scope.inserted);
         };
         $scope.saveItem = function(index){
@@ -50,16 +59,16 @@
                 data = $scope.update[index];
             }
 
-            if(data.accessKey == null || data.accessKey.trim()==""){
+            if(data.accesskey == null || data.accesskey.trim()==""){
                 appBase.bubMsg("accessKey 不能为空");
                 //$scope.listItems();
                 return;
             }
-            if(data.secretKey == null || data.secretKey.trim()==""){
+            if(data.secretkey == null || data.secretkey.trim()==""){
                 appBase.bubMsg("secretKey 不能为空");
                 return;
             }
-            if(data.platform == null || data.platform.trim()==""){
+            if(data.platform == 0 ){
                 appBase.bubMsg("platform 不能为空");
                 return;
             }
@@ -79,10 +88,10 @@
             if(index >= $scope.update.length){
                 switch(name){
                     case "accessKey":
-                        $scope.insert[index-$scope.update.length].accessKey =data;
+                        $scope.insert[index-$scope.update.length].accesskey =data;
                         break;
                     case "secretKey":
-                        $scope.insert[index-$scope.update.length].secretKey =data;
+                        $scope.insert[index-$scope.update.length].secretkey =data;
                         break;
                     case "platform":
                         $scope.insert[index-$scope.update.length].platform =data;
@@ -91,10 +100,10 @@
             }else{
                 switch(name){
                     case "secretKey":
-                        $scope.update[index].secretKey =data;
+                        $scope.update[index].secretkey =data;
                         break;
                     case "accessKey":
-                        $scope.update[index].accessKey =data;
+                        $scope.update[index].accesskey =data;
                         break;
                     case "platform":
                         $scope.update[index].platform =data;
