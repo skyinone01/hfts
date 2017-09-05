@@ -1,4 +1,5 @@
 'use strict';
+//http://120.27.8.33/phpmyadmin/index.php
 //var API_ROOT ="http://120.27.8.33:8888/";
 //var PAGES_ROOT ="http://120.27.8.33:8080/ugms/";
 //
