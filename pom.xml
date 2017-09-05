@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ugms.backend</groupId>
-    <artifactId>ugms-web</artifactId>
+    <artifactId>hfts-web</artifactId>
     <version>1.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>ugms-web</name>
+    <name>hfts-web</name>
     <description>Web API for ugms</description>
 
     <modules>

@@ -1,6 +1,6 @@
 'use strict';
-//var API_ROOT ="http://120.26.221.137:8080/";
-//var PAGES_ROOT ="http://120.26.221.137:3000/ugms/";
+//var API_ROOT ="http://120.27.8.33:8888/";
+//var PAGES_ROOT ="http://120.27.8.33:8080/ugms/";
 //
 var API_ROOT ="http://127.0.0.1:8080/";
 var PAGES_ROOT ="http://127.0.0.1:3000/";

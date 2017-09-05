@@ -21,7 +21,7 @@
 
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- rollover daily 配置日志所生成的目录以及生成文件名的规则 -->
-            <fileNamePattern>ugms-outer-logs/error/ugms-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/error/hfts-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- or whenever the file size reaches 64 MB -->
@@ -51,7 +51,7 @@
 
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- rollover daily 配置日志所生成的目录以及生成文件名的规则 -->
-            <fileNamePattern>ugms-outer-logs/info/ugms-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/info/hfts-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- or whenever the file size reaches 64 MB -->
