@@ -21,4 +21,8 @@ public abstract class TradeTask implements Callable{
     }
 
     abstract protected Object doTask(Operation operation);
+
+    public Operation getOperation(){
+        return operation;
+    }
 }
