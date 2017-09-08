@@ -1,5 +1,7 @@
 package com.ug369.backend.service.component.Task;
 
+import com.ug369.backend.service.component.Bean.TradePolicy;
+
 import java.util.concurrent.Future;
 
 /**
@@ -9,10 +11,13 @@ public class CheckerTask {
 
     private Operation operation;
     private Future future;
+    private TradePolicy tradePolicy;
 
-    public CheckerTask(Operation operation, Future future){
+
+    public CheckerTask(Operation operation, Future future,TradePolicy tradePolicy){
         this.operation = operation;
         this.future = future;
+        this.tradePolicy = tradePolicy;
     }
 
     public Operation getOperation() {
@@ -29,5 +34,13 @@ public class CheckerTask {
 
     public void setFuture(Future future) {
         this.future = future;
+    }
+
+    public TradePolicy getTradePolicy() {
+        return tradePolicy;
+    }
+
+    public void setTradePolicy(TradePolicy tradePolicy) {
+        this.tradePolicy = tradePolicy;
     }
 }

@@ -23,7 +23,7 @@ public class Trader extends AbstractRunner{
     protected void doBusiness() throws InterruptedException {
         TradeTask task = taskQueue.take();
         Future<Object> result = ThreadExecutor.submit(task);
-        CheckerTask orderCheckerTask = new CheckerTask(task.getOperation(),result);
+        CheckerTask orderCheckerTask = new CheckerTask(task.getOperation(),result,task.getTradePolicy());
 
 
     }

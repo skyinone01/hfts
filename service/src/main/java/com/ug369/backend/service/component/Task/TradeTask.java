@@ -2,6 +2,8 @@ package com.ug369.backend.service.component.Task;
 
 ;
 
+import com.ug369.backend.service.component.Bean.TradePolicy;
+
 import java.util.concurrent.Callable;
 
 /**
@@ -11,8 +13,11 @@ public abstract class TradeTask implements Callable{
 
     private Operation operation;
 
-    TradeTask(Operation operation){
+    private TradePolicy tradePolicy;
+
+    TradeTask(Operation operation,TradePolicy tradePolicy){
         this.operation = operation;
+        this.tradePolicy = tradePolicy;
     }
 
     @Override
@@ -24,5 +29,9 @@ public abstract class TradeTask implements Callable{
 
     public Operation getOperation(){
         return operation;
+    }
+
+    public TradePolicy getTradePolicy() {
+        return tradePolicy;
     }
 }

@@ -1,5 +1,6 @@
 package com.ug369.backend.service.component.Task;
 
+import com.ug369.backend.service.component.Bean.TradePolicy;
 import com.ug369.backend.service.component.Bean.YunbiConfig;
 import org.bitcoin.market.AbstractMarketApi;
 import org.bitcoin.market.MarketApiFactory;
@@ -15,8 +16,8 @@ public class YunbiTask extends TradeTask {
     private Long orderId;
     private SymbolPair symbolPair;
 
-    YunbiTask(Operation operation) {
-        super(operation);
+    YunbiTask(Operation operation, TradePolicy tradePolicy) {
+        super(operation,tradePolicy);
     }
 
     @Override
