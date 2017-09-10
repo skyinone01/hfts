@@ -2,9 +2,13 @@ package com.ug369.backend.outerapi.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.ug369.backend.bean.base.request.WebUser;
+import com.ug369.backend.bean.base.response.BasicResponse;
 import com.ug369.backend.bean.base.response.DataResponse;
 import com.ug369.backend.bean.exception.UgmsStatus;
 import com.ug369.backend.bean.exception.UserException;
+import com.ug369.backend.outerapi.annotation.UserInjected;
+import com.ug369.backend.service.component.Bean.TradePolicy;
 import com.ug369.backend.service.component.HTTP.HTTPSendor;
 import com.ug369.backend.service.service.PlatformService;
 import org.slf4j.Logger;
@@ -79,4 +83,19 @@ public class UserPanelController {
         return new DataResponse(platformService.getPlatforms());
 
     }
+
+    @RequestMapping(value = "/policy", method = RequestMethod.GET)
+    public DataResponse  policy(@UserInjected WebUser user){
+
+        return new DataResponse(platformService.getPolicy(user));
+
+    }
+    @RequestMapping(value = "/policy", method = RequestMethod.POST)
+    public BasicResponse addPolicy(TradePolicy tradePolicy){
+
+        platformService.addOrUpdatePolicy(tradePolicy);
+        return BasicResponse.success();
+
+    }
+
 }

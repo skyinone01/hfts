@@ -20,9 +20,10 @@ public class TradePolicy {
     private Double rate;
     private Double balance;
     private boolean rateOrBalance;//0 by rate, 1 by balance
+    private boolean status;//0 by rate, 1 by balance
 
     TradePolicy(long userId,long platform,Date startTime,Date endTime,Double maxPrice,Double minPrice,Double amount,
-                Double initPrice,Double balance,Double rate,boolean rateOrBalance){
+                Double initPrice,Double balance,Double rate,boolean rateOrBalance,boolean status){
         this.userId =userId;
         this.platform =platform;
         this.amount =amount;
@@ -34,6 +35,15 @@ public class TradePolicy {
         this.balance =balance;
         this.rate =rate;
         this.rateOrBalance =rateOrBalance;
+        this.status =status;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     public synchronized Double getNextBuyPrice(){

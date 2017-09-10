@@ -17,7 +17,7 @@ public class Trader extends AbstractRunner{
 
     private static Logger logger = LoggerFactory.getLogger(Trader.class);
 
-    protected BlockingQueue<TradeTask> taskQueue = new LinkedBlockingDeque<>();
+    private static BlockingQueue<TradeTask> taskQueue = new LinkedBlockingDeque<>();
 
     @Override
     protected void doBusiness() throws InterruptedException {
@@ -25,6 +25,12 @@ public class Trader extends AbstractRunner{
         Future<Object> result = ThreadExecutor.submit(task);
         CheckerTask orderCheckerTask = new CheckerTask(task.getOperation(),result,task.getTradePolicy());
 
+    }
+    public static void addTask(TradeTask task){
+        taskQueue.add(task);
+    }
+
+    public static void removeTask(){
 
     }
 }

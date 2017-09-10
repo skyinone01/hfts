@@ -1,5 +1,7 @@
 package com.ug369.backend.service.service;
 
+import com.ug369.backend.bean.base.request.WebUser;
+import com.ug369.backend.service.component.Bean.TradePolicy;
 import com.ug369.backend.service.entity.mysql.Platform;
 import com.ug369.backend.service.repository.mysql.PlatformRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,5 +32,14 @@ public class PlatformService {
         });
 
         return platforms;
+    }
+
+    public Object getPolicy(WebUser user) {
+        return null;
+    }
+
+    public void addOrUpdatePolicy(TradePolicy tradePolicy) {
+
+
     }
 }
