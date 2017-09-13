@@ -15,10 +15,10 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 @Component
 public class PageResovler implements HandlerMethodArgumentResolver {
 
-    @Value("${ugms.pager.param.page}")
+    @Value("${hfts.pager.param.page}")
     String pageParam;
 
-    @Value("${ugms.pager.param.size}")
+    @Value("${hfts.pager.param.size}")
     String sizeParam;
 
     public boolean supportsParameter(MethodParameter parameter) {

@@ -90,8 +90,8 @@ public class UgmsConfiguration extends WebMvcConfigurerAdapter {
                 registry.addMapping("/*").allowedOrigins("*").allowedHeaders("*").allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS").maxAge(6048000);
                 registry.addMapping("/**").allowedOrigins("*").allowedHeaders("*").allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS").maxAge(6048000);
                 registry.addMapping("/**/*").allowedOrigins("*").allowedHeaders("*").allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS").maxAge(6048000);
-                registry.addMapping("/jsp/controller.jsp").allowedOrigins("*").allowedHeaders("*").allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS").maxAge(6048000);
-                registry.addMapping("/uploadimage/result").allowedOrigins("*").allowedHeaders("*").allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS").maxAge(6048000);
+//                registry.addMapping("/jsp/controller.jsp").allowedOrigins("*").allowedHeaders("*").allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS").maxAge(6048000);
+//                registry.addMapping("/uploadimage/result").allowedOrigins("*").allowedHeaders("*").allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS").maxAge(6048000);
             }
         };
     }

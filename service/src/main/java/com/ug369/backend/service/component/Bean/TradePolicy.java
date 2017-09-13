@@ -20,7 +20,7 @@ public class TradePolicy {
     private Double rate;
     private Double balance;
     private boolean rateOrBalance;//0 by rate, 1 by balance
-    private boolean status;//0 by rate, 1 by balance
+    private boolean status;//0  stop, 1 start
 
     TradePolicy(long userId,long platform,Date startTime,Date endTime,Double maxPrice,Double minPrice,Double amount,
                 Double initPrice,Double balance,Double rate,boolean rateOrBalance,boolean status){
@@ -159,5 +159,16 @@ public class TradePolicy {
 
     public void setInitPrice(Double initPrice) {
         this.initPrice = initPrice;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof TradePolicy){
+            TradePolicy temp = (TradePolicy) obj;
+            if (temp.getUserId() == this.userId && temp.getPlatform() == this.platform){
+                return true;
+            }
+        }
+        return false;
     }
 }

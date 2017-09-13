@@ -1,10 +1,10 @@
 package com.ug369.backend.service.component.Task;
 
-;
-
 import com.ug369.backend.service.component.Bean.TradePolicy;
 
 import java.util.concurrent.Callable;
+
+;
 
 /**
  * Created by Roy on 2017/8/3.
@@ -25,7 +25,7 @@ public abstract class TradeTask implements Callable{
         return doTask(operation);
     }
 
-    abstract protected Object doTask(Operation operation);
+    abstract protected Object doTask(Operation operation) throws Exception;
 
     public Operation getOperation(){
         return operation;
