@@ -4,8 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ug369.backend.bean.base.response.BasicResponse;
 import com.ug369.backend.bean.exception.UgmsStatus;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.AccessDeniedException;
-import org.springframework.security.web.access.AccessDeniedHandler;
+import org.springframework.security.authentication.InsufficientAuthenticationException;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletException;
@@ -16,23 +17,23 @@ import java.io.PrintWriter;
 
 
 @Component
-public class UgmsAccessDeniedHandler implements AccessDeniedHandler {
+public class HFTSAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
     @Autowired
     ObjectMapper objectMapper;
 
     @Override
-    public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,
-                       AccessDeniedException e) throws IOException, ServletException {
+    public void commence(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,
+                         AuthenticationException e) throws IOException, ServletException {
 
-        if (!httpServletResponse.isCommitted()) {
+        if (!(e instanceof InsufficientAuthenticationException)) {
+
             httpServletResponse.setStatus(HttpServletResponse.SC_FORBIDDEN);
             PrintWriter writer = httpServletResponse.getWriter();
-            writer.print(objectMapper.writeValueAsString(new BasicResponse(UgmsStatus.AUTH_FAILED,
-                    "没有权限: " + httpServletRequest.getRequestURI())));
+            writer.print(objectMapper
+                    .writeValueAsString(new BasicResponse(UgmsStatus.AUTH_FAILED, "用户名密码错误")));
             writer.flush();
             writer.close();
         }
     }
-
 }

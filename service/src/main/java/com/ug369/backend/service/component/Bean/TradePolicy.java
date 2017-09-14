@@ -19,11 +19,13 @@ public class TradePolicy {
     private Double sellPrice;
     private Double rate;
     private Double balance;
+    private Symbol symbol;
     private boolean rateOrBalance;//0 by rate, 1 by balance
     private boolean status;//0  stop, 1 start
+    private String market;
 
     TradePolicy(long userId,long platform,Date startTime,Date endTime,Double maxPrice,Double minPrice,Double amount,
-                Double initPrice,Double balance,Double rate,boolean rateOrBalance,boolean status){
+                Double initPrice,Double balance,Double rate,boolean rateOrBalance,boolean status,Symbol symbol){
         this.userId =userId;
         this.platform =platform;
         this.amount =amount;
@@ -56,6 +58,13 @@ public class TradePolicy {
         return buyPrice;
     }
 
+    public Symbol getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(Symbol symbol) {
+        this.symbol = symbol;
+    }
 
     public long getUserId() {
         return userId;
@@ -159,6 +168,14 @@ public class TradePolicy {
 
     public void setInitPrice(Double initPrice) {
         this.initPrice = initPrice;
+    }
+
+    public String getMarket() {
+        return market;
+    }
+
+    public void setMarket(String market) {
+        this.market = market;
     }
 
     @Override
